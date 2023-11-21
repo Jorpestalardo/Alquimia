@@ -1,0 +1,29 @@
+Diseño y Desarrollo Web 
+
+4to Cuatrimestre
+2023
+Turno tarde
+Comisión AV
+Hernandez Flores Abril
+Santiago Gallino
+Final
+
+4to Cuatrimestre
+2023
+Turno Noche
+Comisión AV
+María Jorgelina Pestalardo
+Santiago Gallino
+Final
+
+Datos de admin:
+   email: abril@gmail.com
+   contraseña: hernandez
+
+Datos de alquimista donante:
+   email: donante@gmail.com
+   contraseña: 123
+
+Datos de alquimista consumidor:
+   email: consumidor@gmail.com
+   contraseña: 123

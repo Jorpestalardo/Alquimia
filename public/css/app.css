@@ -1,0 +1,5268 @@
+/* html, body, #app {
+    height: 100%;
+} */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.secDetailNew > .contenidoDetail .comentarios h4{
+    display: flex;
+    align-items: center;
+}
+
+.secDetailNew > .contenidoDetail .comentarios h4 span.fechaComen{
+    color: gray;
+    margin-left: 14px;
+    margin-bottom: 0;
+    font-size: 12px;
+}
+
+.recu-mail{
+    padding: 120px;
+    background-color: whitesmoke;
+    font-family: Comfortaa;
+}
+
+.recu-mail div{
+    padding: 40px;
+}
+
+.recu-mail div .codigo{
+    font-weight: bold;
+    border-bottom: 1px solid #617143;
+}
+
+.envio.entregado{
+    color: #ffffff;
+    background-color:darkgreen ;
+    padding: 10px;
+    border-radius: 20px;
+    margin-left: 10px;
+}
+
+.envio.no-entregado{
+    color: #ffffff;
+    background-color: rgb(100, 2, 0);
+    padding: 10px;
+    border-radius: 20px;
+    margin-left: 10px;
+}
+
+/* ---------------------AVATARES REGISTER------------------ */
+
+.avatares-carousel {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 10px 0;
+    gap: 10px;
+}
+
+.avatares-carousel::-webkit-scrollbar{
+    height: 8px;
+}
+
+.avatares-carousel::-webkit-scrollbar-thumb{
+    background-color: #f2f2f2;
+    border-radius: 20px;
+}
+    
+
+.avatar-input {
+    display: none;
+}
+
+.avatar-label {
+    cursor: pointer;
+    display: inline-block;
+}
+
+.avatar-input:checked + .avatar-label {
+    background-color: #f2f2f2;
+    border-radius: 60px; /* Cambiamos el color de fondo al seleccionar */
+}
+
+.avatar-registro {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Agregamos box-shadow a la transición */
+    border: 2px solid #fff; /* Agregamos un borde blanco */
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1); /* Agregamos sombra */
+}
+
+.avatar-input:checked + .avatar-label .avatar-registro {
+    transform: scale(1.05); /* Reducimos la escala para una transición más suave */
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1); /* Cambiamos la sombra al aumentar el tamaño */
+}
+
+.owl-prev,
+.owl-next {
+    background-color: #333; /* Cambiamos el color de fondo */
+    color: #fff; /* Cambiamos el color del texto */
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.owl-prev:hover,
+.owl-next:hover {
+    background-color: #555; /* Cambiamos el color de fondo al pasar el mouse */
+}
+
+/* ---------------------------------------- */
+
+.secMercado h2.ventasTitulo{
+    margin-top: 90px;
+}
+.secMercado div div div .col-md-6{
+    margin-bottom: 60px;
+}
+
+body{
+    background-color: #F4FCF6;
+}
+
+#app nav div div ul li form button{
+    display: flex;
+    align-items: center;
+}
+
+#app nav div div ul li form button ion-icon{
+    font-size: 20px;
+    margin-left: 6px;
+}
+
+.consumidorMain{
+    background: #fed46e;
+}
+
+.donadorMain{
+    background: #adc2b5;
+}
+
+.adminMain{
+    background: #617244;
+}
+
+.consumidorMain,
+.donadorMain,
+.adminMain{
+    display: flex;
+    justify-content: space-between;
+    padding: 34px;
+}
+
+.adminMain a {
+    color: white;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-family: ABeeZee;   
+}
+
+.consumidorMain a,
+.donadorMain a {
+    color: black;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-family: ABeeZee;   
+}
+
+.adminMain > form button{
+    color: white;
+    font-family: ABeeZee;   
+    display: flex;
+    align-items: center;
+}
+
+.consumidorMain > form button,
+.donadorMain > form button{
+    color: black;
+    font-family: ABeeZee;   
+    display: flex;
+    align-items: center;
+}
+
+.consumidorMain > form button ion-icon,
+.donadorMain > form button ion-icon,
+.adminMain > form button ion-icon{
+    font-size: 20px;
+    margin-right: 4px;
+}
+
+
+/****** Consumidor******/
+
+.indexConsumidor{
+    background-image: url(../img/consumidor/indexconsumidor.svg);
+    background-repeat: no-repeat;
+    background-size: 80%; /* Ajustar el tamaño del SVG */
+    background-position: 90% 70%; /* Desplazar hacia abajo */
+    /* padding: 100px; */
+    height: 100vh;
+    background-color: #FED46E;
+}
+
+
+.indexConsumidor > .acciones{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+}
+
+.indexConsumidor > .acciones a{
+    color: #000;
+    text-decoration: none;
+}
+
+.indexConsumidor > .acciones a,
+.indexConsumidor > .acciones form button{
+    display: flex;
+    align-items: center;
+    font-family: ABeeZee;   
+}
+
+.indexConsumidor > .acciones form button ion-icon{
+    margin-right: 4px;
+    font-size: 24px;
+}
+
+.indexConsumidor div > h1 {
+    color: #E17957;
+    font-size: 64px;
+    font-family: Comfortaa;
+    font-weight: 600;
+    margin-right: 170px;
+    padding-top: 200px;
+}
+.indexTexto{
+    width: 600px;
+}
+.indexTexto > p {
+    color: #000;
+    font-size: 24px;
+    font-family: ABeeZee;
+}
+
+.indexTexto{
+    color: #000;
+    font-size: 24px;
+    font-family: ABeeZee;
+}
+
+.consumidorInfo .indexBotones > a{
+    background-color: #DD6442;
+    margin: 20px;
+    color: #000;
+    text-align: center;
+    font-size: 18px;
+    font-family: ABeeZee;
+}
+.consumidorInfo .indexBotones > a > a{
+    background-color: #E07857;
+    color: #000;
+    text-align: center;
+    font-size: 18px;
+    font-family: ABeeZee;   
+}
+
+/**----------------------------**/
+
+
+/****** Donante ******/
+
+.indexDonador{
+    background-image: url(../img/donador/indexDonador.svg);
+    background-repeat: no-repeat;
+    background-size: 80%; /* Ajustar el tamaño del SVG */
+    background-position: 80% 70%; /* Desplazar hacia abajo */
+    padding: 100px;
+    height: 100vh;
+    background-color: #ADC2B5;
+}
+.indexDonador div > h1 {
+    color: #FFF;
+    font-size: 64px;
+    font-family: Comfortaa;
+    font-weight: 600;
+    width: 800px;
+    padding-top: 200px;
+}
+.indexTexto{
+    width: 600px;
+}
+.indexTexto > p {
+    color: #000;
+    font-size: 24px;
+    font-family: ABeeZee;
+}
+
+.indexBotones > a{
+    background-color: #8CA33C;
+    margin: 20px;
+    color: #000;
+    text-align: center;
+    font-size: 18px;
+    font-family: ABeeZee;
+
+}
+.indexBotones > a > a{
+    background-color: #B1C571;;
+    color: #000;
+    text-align: center;
+    font-size: 18px;
+    font-family: ABeeZee;
+
+}
+
+/**----------------------------**/
+
+
+/****** Admin ******/
+.adminIndex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.adminIndex .container {
+    text-align: center;
+}
+
+.indexTextoAdmin > p {
+    color: #FFF;
+    font-size: 24px;
+    font-family: ABeeZee;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+.adminIndex{
+    background-image: url(../img/admin/indexAdmin.svg);
+    background-repeat: no-repeat;
+    background-size: 80%; /* Ajustar el tamaño del SVG */
+    background-position: 30% 90%; /* Desplazar hacia abajo */
+    padding: 100px;
+    height: 100vh;
+    background-color: #617244;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+}
+
+.adminIndex .container {
+    text-align: center;
+}
+
+.adminIndex div > h1 {
+        color: #FFF;
+        font-size: 64px;
+        font-family: Comfortaa;
+        font-weight: 600;
+        text-align: center;
+}
+
+
+.adminIndex a{
+    background-color: #9DC28C;
+    color: #20260c;
+}
+/* ------------------------------------------- */
+
+/**MERCADO**/
+
+.parrafo-con-linea {
+    border-bottom: 1px solid black;
+}
+.parrafo-con-linea-roja {
+    border-bottom: 1px solid #E07857
+}
+
+.parrafo-con-linea-arriba{
+    border-top: 1px solid black;
+}
+
+.imagen-redondeada {
+    border-radius: 0 30% 0 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 80%; /* Establece el ancho al 100% */
+    height: 300px; /* Establece la altura deseada */
+    object-fit: cover; /* Ajusta la imagen dentro del contenedor */
+}
+
+.imagen-redondeada-detalle {
+    border-radius: 0 30% 0 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 100%; /* Establece el ancho al 100% */
+    height: 600px; /* Establece la altura deseada */
+    object-fit: cover; /* Ajusta la imagen dentro del contenedor */
+}
+
+.secMercado > div > h1{
+    color: #000;
+    font-size: 32px;
+    font-family: ABeeZee;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.secMercado div p{
+    font-size: 18px;
+}
+
+.tituloPrecio{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.tituloPrecio > h2{
+    color: #000;
+    font-size: 26px;
+    font-family: ABeeZee;
+    font-weight: 400;
+    max-width: 200px;
+}
+
+
+
+.consumidor-main > .secMercado > div div div  .card_mercado .custom-btn-mercado,
+.consumidor-main > .userProduct > div div div  .card_mercado .custom-btn-mercado{
+    border-radius: 16px;
+    background: rgba(173, 194, 181, 0.679);
+    border-radius: 16px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.donador-main > .secMercado > div div div  .card_mercado .custom-btn-mercado,
+.donador-main > .userProduct > div div div  .card_mercado .custom-btn-mercado{
+    border-radius: 16px;
+    background: rgb(173, 194, 181, 0.679);
+    border-radius: 16px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.consumidor-main > .secMercado > div div div  .card_mercado .custom-btn-mercado:hover,
+.consumidor-main > .userProduct > div div div  .card_mercado .custom-btn-mercado:hover {
+    border: 3px solid #E17957;
+    background: rgb(239 146 101 / 39%);
+    border-radius: 16px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.donador-main > .secMercado > div div div  .card_mercado .custom-btn-mercado:hover,
+.donador-main > .userProduct > div div div  .card_mercado .custom-btn-mercado:hover {
+    border: 3px solid rgb(173 194 181);
+    background: rgba(173, 194, 181, 0.679);
+    border-radius: 16px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+
+/**Detalle mercado**/
+
+.donador-main > .detalleMercado{
+    background-color: #ADC2B5;
+}
+
+.detalleMercado{
+    background-color: #C9B699;
+}
+
+.detalleMercado > div > div > h1 {
+    color: #000;
+    font-size: 32px;
+    font-family: ABeeZee;
+}
+
+.textoBlanco{
+    color: #FFF;
+}
+
+.constume-btn-chatMercado{
+    background: #DD6442;
+    color: white;
+    padding-left: 25px;
+    padding-right:  25px;
+    border-radius: 16px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-left: 20px;
+}
+
+
+.donador-main .constume-btn-chatMercado{
+    background: #7798a3;
+    color: white;
+}
+
+.donador-main .constume-btn-chatMercado:hover{
+    background: #7798a3;
+    border: 3px solid  #6a6761;
+}
+
+
+.constume-btn-chatMercado:hover{
+    background: #DD6442;
+    border: 3px solid  #6a6761;
+    border-radius: 16px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.costume-btn-volver{
+    background: #EBE4D2;
+    border-radius: 16px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.costume-btn-volver:hover {
+    border: 3px solid  #6a6761;
+    background: #EBE4D2;
+    border-radius: 16px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.chatExplicacion{
+    width: 200px;
+}
+
+.autorDate{
+    margin-top: 100px;
+}
+
+.autorDate > h2 {
+    font-size: 20px;
+    font-family: ABeeZee;
+    color: #000;
+}
+
+/**tus ventas**/
+
+.tusVentas > h1 {
+    font-size: 32px;
+    font-family: ABeeZee;
+    color: #000;
+}
+
+.userProduct, .deleteEmpresa{
+    background-color: #FED46E;
+}
+
+/******Elementos para reciclar "ver reciclaje" *****/
+
+/*también lo use para el titulo de eliminar producto en tus ventas*/
+.tusReciclajes > h1{
+    font-size: 32px;
+    font-family: Comfortaa;
+    color: #000;
+}
+
+.tusReciclajes > h2{
+    font-size: 20px;
+    font-family: Comfortaa;
+    color: #000;
+}
+.tusReciclajes .row{
+    margin-bottom: 20%;
+}
+
+.tusReciclajes .filtros{
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #fed46e;
+    padding: 56px;
+}
+
+.tusReciclajes .filtros div form{
+    font-family: ABeeZee;
+}
+
+.tusReciclajes .filtros div p{
+    font-size: 18px;
+}
+
+.tusReciclajes .filtros div form select,
+.secMercado div form select{
+    border: none;
+    border-radius: 8px;
+    margin-left: 8px;
+    padding: 10px;
+}
+
+.tusReciclajes .filtros div form button{
+    background: #e7c061;
+    margin-left: 10px;
+    border-radius: 8px;
+}
+
+.secMercado div .filtros{
+    padding: 30px;
+}
+
+.consumidor-main .secMercado div form button{
+    background: #e07857;
+    margin-left: 10px;
+    border-radius: 8px;
+}
+
+.donador-main .secMercado div form button{
+    background: #7798a3;
+    margin-left: 10px;
+    border-radius: 8px;
+}
+
+
+/*****************************/
+
+/*AGREGO LO DE ABRIL*/
+section{
+    width: 100%;
+}
+html body .main{
+    display: flex;
+}
+html body .main > .sidebar{
+    width: 30%;
+}
+
+
+html body .main > .sidebar > nav ul{
+    list-style-type: none;
+    margin-top: 15%;
+    padding-right: 1rem;
+    width: 90%;
+}
+
+html body .main > .sidebar.donador-navbar {
+    background-color: #ADC2B5;
+    display: flex;
+    flex-direction: column;
+}
+html body .main > .sidebar > nav{
+    padding: 28px;
+}
+
+html body .main > .sidebar.consumidor-navbar{
+    background-color: #FED46E;
+    display: flex;
+    flex-direction: column;
+}
+
+
+html body .main > .sidebar > nav p{
+    font-family: 'Comfortaa';
+    font-weight: bold;
+    font-size: 28px;
+    margin-top: 20px;
+}
+
+html body .main > .sidebar.consumidor-navbar ul li.boton,
+html body .main > .sidebar.donador-navbar ul li.boton,
+.donador-main > .sidebar.donador-navbarMercado ul li.boton,
+.consumidor-main > .sidebar.consumidor-navbarMercado ul li.boton{
+    background-color: transparent;
+}
+
+html body .main > .sidebar.consumidor-navbar ul li.boton form,
+html body .main > .sidebar.donador-navbar ul li.boton form,
+.donador-main > .sidebar.donador-navbarMercado ul li.boton form,
+.consumidor-main > .sidebar.consumidor-navbarMercado ul li.boton form{
+    margin-top: 60px;
+}
+
+html body .main > .sidebar.consumidor-navbar ul li.boton form button,
+html body .main > .sidebar.donador-navbar ul li.boton form button,
+.donador-main > .sidebar.donador-navbarMercado ul li.boton form button,
+.consumidor-main > .sidebar.consumidor-navbarMercado ul li.boton form button{
+    display: flex;
+    align-items: center;
+    font-family: 'ABeeZee', sans-serif;
+}
+
+html body .main > .sidebar.consumidor-navbar ul li{
+    background-color: #E7C061;
+    border-radius: 16px;
+    margin-bottom: 20px;
+}
+
+html body .main > .sidebar.donador-navbar ul li{
+    background-color: #9EA994;
+    border-radius: 16px;
+    margin-bottom: 20px;
+}
+
+html body .main > .sidebar.donador-navbar ul li .publicar{
+    background-color: #C5C7A0;
+    border-radius: 16px;
+    margin-top: 156px;
+}
+
+html body .main > .sidebar.donador-navbar ul li .buttonCerrar{
+    border-radius: 16px;
+    margin-bottom: 20px;
+    margin-top: 14%;
+    display: flex;
+    align-items: center;
+}
+
+html body .main > .sidebar.admin-navbar{
+    background-color: #617244;
+}
+
+html body .main > .sidebar.admin-navbar > nav ul li a{
+    color: white;
+}
+
+html body .main > .sidebar.admin-navbar > nav p{
+    color: white;
+}
+
+html body .main > .sidebar.admin-navbar > nav div{
+    display: flex;
+    align-items: center;
+}
+
+html body .main > .sidebar.admin-navbar > nav div .alquimia{
+    background-image: url(../img/admin/alquimia-blanco.svg);
+    height: 60px;
+    width: 60px;
+    background-repeat: no-repeat;
+}
+
+html body .main > .sidebar.admin-navbar ul li{
+    background-color: #7C905A;
+    border-radius: 16px;
+    margin-bottom: 20px;
+}
+
+html body .main > .sidebar.admin-navbar ul li.boton form button{
+    display: flex;
+    align-items: center;
+    font-family: 'ABeeZee', sans-serif;
+    color: white;
+}
+
+html body .main > .sidebar.admin-navbar ul li.boton{
+    background: transparent;
+}
+
+html body .main > .sidebar.admin-navbar ul li.boton form{
+    margin-top: 100px;
+}
+
+
+html body .main > .sidebar > nav ul li a {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: #000;
+    padding: 20px;
+    font-family: 'ABeeZee', sans-serif;
+}
+
+html body .main > .sidebar > nav ul li a span ion-icon{
+    font-size: 24px;
+}
+
+html body .main > .sidebar.consumidor-navbar >  ul li:last-child{
+    background-color: #fed46e;
+}
+
+html body .main > .sidebar.consumidor-navbar >  ul li .buttonCerrar{
+    background-color: #fed46e;
+    border-radius: 16px;
+    margin-bottom: 20px;
+    margin-top: 50%;
+    display: flex;
+    align-items: center;
+}
+
+html body .main > .sidebar > nav ul li .buttonCerrar ion-icon{
+    margin-right: 18px;
+    font-size: 26px;
+}
+
+html body .main > .sidebar.consumidor-navbar > nav div,
+html body .main > .sidebar.donador-navbar > nav div,
+.donador-main > .sidebar.donador-navbarMercado nav div,
+.consumidor-main > .sidebar.consumidor-navbarMercado nav div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+html body .main > .sidebar.donador-navbar > nav div a{
+    width: 25%;
+    background-color: #7798a3;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.donador-main > .sidebar.donador-navbarMercado nav div a{
+    width: 25%;
+    background-color: #adc2b5;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+html body .main > .sidebar.consumidor-navbar > nav div a{
+    width: 25%;
+    background-color: #e07857;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.consumidor-main > .sidebar.consumidor-navbarMercado nav div a{
+    width: 25%;
+    background-color: #fed46e;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+html body .main > .sidebar.consumidor-navbar > nav div img,
+html body .main > .sidebar.donador-navbar > nav div img,
+.donador-main > .sidebar.donador-navbarMercado nav div img,
+.consumidor-main > .sidebar.consumidor-navbarMercado nav div img{
+    width: 72%;
+}
+
+html body .main > .sidebar.consumidor-navbar > nav div p{
+    color: saddlebrown;
+}  
+
+
+/* MERCADO CONSUMIDOR Y DONANTE */
+html body .main > .sidebar.consumidor-navbarMercado ul li{
+    background-color: #E97E5D;
+    border-radius: 16px;
+    margin-bottom: 20px;
+}
+
+html body .main > .sidebar.donador-navbarMercado ul li{
+    background-color: #8BB1BE;
+    border-radius: 16px;
+    margin-bottom: 20px;
+}
+
+html body .main > .sidebar.consumidor-navbarMercado{
+    background-color: #E07857;
+}
+
+html body .main > .sidebar.donador-navbarMercado{
+    background-color: #7798A3;
+}
+
+
+
+/* -------------------------------------------- */
+.portada > p{
+    font-family: 'ABeeZee', sans-serif;
+    padding-right: 14%;
+    text-align: end;
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+.inicio{
+    height: 100vh;
+}
+
+.inicio > .portada{
+    background-image: url(../img/portada.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 1px;
+    height: 106vh;
+    padding-top: 6%;
+}
+
+.inicio > .portada .alquimia{
+    padding-right: 14%;
+    background-image: url(../img/alquimia.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 200px;
+    background-position-x: 80%;
+}
+
+.bienvenidos{
+    height: 76vh;
+    background-image: url(../img/deco-trashWord.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+    margin-top: 120px;
+}
+
+.bienvenidos > .bievenidaInfo{
+    padding: 120px;
+}
+
+.bienvenidos > .bievenidaInfo > h2{
+    font-size: 92px;
+}
+
+.bienvenidos > .bievenidaInfo > p{
+    
+    margin-right: 32%;
+}
+
+.bienvenidos > .bievenidaInfo > a{
+    background-color: #E17957;
+    color: #482317;
+    font-family: 'ABeeZee', sans-serif;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 23px;
+    border-radius: 24px;
+}
+
+.cardsHome{
+    padding: 230px;
+}
+
+.cardsHome > div div img{
+    height: 150px;
+}
+
+.cardsHome > div > .card{
+    background: #F4FCF6;
+    border: none;
+    border-radius: 24px;
+    box-shadow: 0px 5px 4px 0px rgba(0, 0, 0, 0.1);
+}
+
+.card-group>.card:not(:last-child){
+    border-top-right-radius: 24px;
+    border-bottom-right-radius: 24px;
+}
+.card-group>.card:not(:first-child){
+    border-top-left-radius: 24px;
+    border-bottom-left-radius: 24px;
+}
+
+.cardsHome div .card2{
+    margin-right: 120px;
+}
+
+.cardsHome div .card1{
+    margin-right: 120px;
+}
+
+.cardsHome > div > .card div h2{
+    font-size: 24px;
+    color: #617143;
+}
+
+.cardsHome > div > .card div{
+    padding: 40px;
+}
+
+.cardsHome > div > .card div p{
+    padding-top: 20px;
+}
+
+.cardsHome > .section2{
+    margin-top: 5%;
+    margin-left: 5%;
+    width: 100%;
+}
+
+.cardsHome > .section2 div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.cardsHome > .section2 .card div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+h1,
+h2{
+    font-family: 'Comfortaa';
+    color: #617143;
+}
+
+.donador-mainReci .formNew{
+    background-color: #7798A3;
+}
+.donador-mainReci .formNew h1{
+    color: white;
+}
+
+.donador-mainReci .formNew > form{
+    background-color: #adbbbf87;
+    background-image: url(../img/donador/reciclaje/fondo-form-donacion.svg);
+}
+
+
+.secEventos,
+.detaildonacion,
+.detaildonacionEvento{
+    background-color: #E07857;
+    width: 100%;
+}
+
+.detaildonacion,
+.detaildonacionEvento{
+    padding: 100px;
+}
+
+.secEventosDonante,
+.detaildonacionDonante{
+    background-color: #7798A3;
+    width: 100%;
+}
+
+.detaildonacionDonante div > h1{
+    color: black;
+}
+
+
+.secEventos div > h1,
+.detaildonacionDonador div h1,
+.detaildonacionEvento div h1,
+.detaildonacion div h1,
+.secEventosDonante div > h1,
+.detaildonacionEventoDonante div > h1{
+    margin-top: 50px;
+    margin-bottom: 30px;
+    color: #000;
+}
+
+.secEventos div > h2,
+.secEventos div > p span,
+.detaildonacion div > .evento > div .infoEmpresa > .autorDate p span,
+.detaildonacion div > .evento p span,
+.secEventosDonante div > h2,
+.secEventosDonante div > p span,
+.detaildonacionDonante div > .evento > div .infoEmpresa > .autorDate p span,
+.detaildonacionDonante div > .evento p span{
+    color: white;
+    margin-top: 52px;
+}
+
+.detaildonacion .autorDate {
+    margin: 0px;
+}
+
+.detaildonacion div > .evento p,
+.detaildonacionDonante div > .evento p{
+    margin-top: 48px;
+}
+
+.detaildonacion div a {
+    margin-left: 90%;
+    margin-top: 20px;
+    background-color: #EBE4D2;
+    border-radius: 24px;
+    width: 120px;
+}
+
+.detaildonacionDonante div a {
+    margin-left: 90%;
+    margin-top: 20px;
+    background-color: #EBE4D2;
+    border-radius: 24px;
+    width: 120px;
+}
+
+.secEventos div > p,
+.detaildonacionDonante div > p{
+    color: #000;
+}
+
+.secEventos div ul li div .custom-btn-editar,
+.secEventosDonante div ul li div .custom-btn-editar{
+    margin-left: 70%;
+    background-color: #8BB1BE;
+    color: #000;
+    padding: 10px;
+    width: 120px;
+    border-radius: 24px;
+    margin-top: 24px;
+}
+
+.secEventos div > ul,
+.secEventosDonante div > ul{
+    list-style: none;
+    padding-left: 0;
+    margin-top: 90px;
+}
+
+.secEventos div,
+.secEventosDonante div{
+    padding: 50px;
+}
+
+.secEventos div > ul li{
+    display: flex;
+    align-items: center;
+    background-color: #D48662;
+    border-radius: 32px;
+    margin-bottom: 100px;
+    padding: 30px;
+}
+
+.secEventosDonante div > ul li{
+    display: flex;
+    align-items: center;
+    background-color: #7FA09F;
+    border-radius: 32px;
+    margin-bottom: 100px;
+    padding: 30px;
+}
+
+.detaildonacion{
+    background-color:#E07857;
+    background-image: url(../img/consumidor/mercado/fondo-donacion-elementos-detalle.svg);
+}
+
+
+.secEventos div > ul li .fixed-image-size,
+.detaildonacionEvento div > div > div > .fixed-image-size,
+.detaildonacion div > div > div > .fixed-image-size,
+.secEventosDonante div > ul li .fixed-image-size,
+.detaildonacionEventoDonante div > div > div > .fixed-image-size{
+    width: 100%; /* Establece el ancho al 100% */
+    height: 284px; /* Establece la altura deseada */
+    object-fit: cover;
+    border-radius: 0 140px 0 0;
+    -moz-border-radius: 0 140px 0 0;
+    -webkit-border-radius: 0 140px 0 0;
+    box-shadow: 0px 5px 4px 0px rgba(0, 0, 0, 0.1);
+}
+
+.detalleMercado div div.p-3 p{
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.detalleMercado div div.p-3 p a{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: #e07857;
+    width: 13%;
+    border-radius: 42px;
+    padding: 20px;
+    height: 64px;
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.detalleMercado div div.p-3 p a img{
+    width: 40px;
+    margin-left: 14px;
+}
+
+
+.detaildonacion div > div {
+    align-items: center;
+    /* background-image: url(../img/consumidor/mercado/fondo-form.svg); */
+    background-repeat: no-repeat;
+    background-color: #D38661;
+    padding: 20px;
+    border-radius: 24px;
+}
+
+.comentariosEventos > h4,
+.comenta{
+    color: #FFF;
+    padding: 60px;
+}
+
+.costume-btn-comentario{
+    background: #FED46E;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 16px;
+}
+
+.detaildonacionDonante div > div  {
+    align-items: center;
+    background-color: #7FA09F;
+    padding: 20px;
+    border-radius: 24px;
+}
+
+.detaildonacion > div form div textarea{
+    resize: none;
+}
+
+.secEventosDonante div .funciones{
+    display: flex;
+    justify-content: space-around;
+}
+
+.secEventosDonante div .funciones a:first-child{
+    background-color: #ADC2B5;
+    border-radius: 24px;
+    font-family: 'ABeeZee', sans-serif;
+}
+
+.secEventosDonante div .funciones a:last-child{
+    background-color: #B6C475;
+    border-radius: 24px;
+    font-family: 'ABeeZee', sans-serif;
+}
+
+.secEventosDonante div h1{
+    color: #000;
+}
+/* -----------------------MISEVENTOS-----------------------*/
+.donador-mainReci > .secEventosDetail{
+    background-color: #7798A3;
+}
+
+.donador-mainReci > .secEventosDetail div h1{
+    color: black;
+    font-size: 32px;
+}
+
+.donador-mainReci > .secEventosDetail div h2{
+    font-size: 40px;
+}
+
+.donador-mainReci > .secEventosDetail div p{
+    font-size: 17px;
+}
+
+.donador-mainReci > .secEventosDetail div h2,
+.donador-mainReci > .secEventosDetail div p{
+    color: white;
+}    
+.donador-mainReci > .secEventosDetail div a{
+    background-color: #B6C475;
+    border-radius: 24px;
+    font-family: 'ABeeZee', sans-serif;
+    margin-bottom: 40px;
+    margin-top: 6px;
+}
+
+.donador-mainReci .secEventosDetail div > ul li{
+    display: flex;
+    align-items: center;
+    background-color: #9EA994;
+    border-radius: 32px;
+    margin-bottom: 100px;
+    padding: 30px;
+}
+
+.donador-mainReci .secEventosDetail div > ul li .fixed-image-size{
+    height: 284px;
+    object-fit: cover;
+    border-radius: 0 140px 0 0;
+    -moz-border-radius: 0 140px 0 0;
+    -webkit-border-radius: 0 140px 0 0;
+    box-shadow: 0px 5px 4px 0px rgba(0, 0, 0, 0.1);
+}
+.donador-mainReci .secEventosDetail div > ul {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 90px;
+}
+
+.donador-mainReci .secEventosDetail div {
+    padding: 50px;
+}
+
+.donador-mainReci .secEventosDetail div ul li div h2{
+    color: #000;
+    font-size: 26px;
+}
+
+.donador-mainReci .secEventosDetail div ul li div p{
+    color: #000;
+}
+
+.donador-mainReci .secEventosDetail div ul li div p span a{
+    background-color: transparent;
+    color: #21211a;
+    text-decoration: revert;
+}
+
+.donador-mainReci .secEventosDetail div ul li div .custom-btn-editar {
+    margin-left: 70%;
+    background-color: #8BB1BE;
+    color: #000;
+    padding: 10px;
+    width: 120px;
+    border-radius: 24px;
+    margin-top: 24px;
+}
+
+/* --------------------------------------- */
+
+.blog > .blogContenido h1{
+    font-weight: 600;
+    font-size: 94px;
+    margin-right: 30%;
+    font-weight: bold;
+}
+
+.blog > .blogContenido{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    height: 72vh;
+    padding: 120px;
+}
+
+.blog > .blogContenido a{
+    background-color: #255126;
+    color: white;
+}
+
+.blog > article ul{
+    list-style: none;
+    border-top: 1px dashed #617143;
+}
+
+.blog > article > ul > li{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 54px;
+}
+
+.blog > article > ul > li > div{
+    padding: 44px;
+}
+
+.blog > article > ul > li > div a ion-icon{
+    font-size: 12px;
+    color: #E17957;
+}
+
+ul > li > div a{
+    text-decoration: none;
+    color: #E17957;
+    font-family: 'ABeeZee', sans-serif;
+}
+
+
+
+
+.blog > .blogContenido p{
+    margin-right: 48%;
+}
+
+.blog {
+    background-image: url(../img/blog-back.svg);
+    background-repeat: no-repeat;
+    background-size: 40%;
+    background-position-x: right;
+}
+
+.blog > article {
+    margin-top: 10%;
+}
+
+.blog > .eventos {
+    display: flex;
+    margin-top: 10%;
+}
+
+.blog > .eventos > .box{
+    background-image: url(../img/foto-blog-reciclando.jpg);
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 800px;
+}
+
+.blog > .eventos > .texto{
+    background-color: #E17957;
+    width: 50%;
+    height: 800px;
+    padding: 100px;
+}
+
+.blog > .eventos .texto > h2{
+    color: #482317;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.blog > .eventos .texto > a{
+    background-color: white;
+    border-radius: 24px;
+    font-family: 'ABeeZee', sans-serif;
+    font-size: 14px;
+    width: 120px;
+    margin-top: 20px;
+}
+
+/* -------------------------------------------- */
+/****DONADOR TUS RECICLAJES***/
+
+.dashboardDonador{
+    background-color: #7798A3;
+    background-image: url(../img/donador/reciclaje/fondo-reciclaje-donante.svg);
+    background-repeat: repeat;
+    background-size: 100%; /* Ajustar el tamaño del SVG */
+    background-position-y: 16px;
+}
+
+.detaildonacionDonador{
+    background-color: #7798A3;
+    background-image: url(../img/donador/reciclaje/fondo-reciclaje-donante-detalle.svg);
+    background-repeat: repeat;
+    background-size: 100%; /* Ajustar el tamaño del SVG */
+    padding: 100px;
+}
+
+.cardDashboardDonador {
+    background-color: #ADC2B5;
+    border-top-right-radius: 60px; /* Aplica el borde curvado en la esquina superior derecha */
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2), -2px -2px 4px rgba(255, 255, 255, 0.4);
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.constume-btn-donacionDonador{
+    background: #C5C7A0;
+    color: #000;
+    padding-left: 25px;
+    padding-right:  25px;
+    border-radius: 16px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+
+.constume-btn-donacionDonador:hover{
+    background: #ADC2B5;
+    border: 3px solid  #6a6761;
+    border-radius: 16px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.infoDonacion .authorDate{
+    margin: 0px;
+}
+
+/*DETALLE DE TUS RECICLAJES SIENDO DONADOR*/
+
+.custom-btn-editarDonador{
+    background: #8BA236;
+    border-radius: 16px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.custom-btn-editarDonador:hover{
+    background: #B1C471;
+    border: 3px solid  #e5e1da;
+    border-radius: 16px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.custom-btn-eliminarDonador{
+    background:#DD6442;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 16px;
+}
+
+.custom-btn-eliminarDonador:hover{
+    background:#DD6442;
+    padding-left: 30px;
+    padding-right: 30px;
+    border: 3px solid  #b7b3ab;
+    border-radius: 16px;
+}
+
+
+/*EDITAR DE DONACIóN*/
+.formDonacion
+{
+    background-color: #7798A3;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formDonacion > form > .etiquetas{
+    display: flex;
+    align-items: baseline;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.formDonacion > form > div .required{
+    color: red;
+    margin-left: 5px;
+}
+
+.form-switch {
+    /* padding-left: 2.5em; */
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+.formDonacion > form > .etiquetas > .labelEti{
+    margin-right: 70%;
+}
+
+.formDonacion > form div > p
+{
+    color: gray;
+    font-size: 12px;
+}
+
+.formDonacion h1
+{
+    font-weight: 600;
+    color: #000;
+    font-size: 32px;
+    font-family: ABeeZee;
+    margin: 100px 0 100px 0;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+.formDonacion > form
+{
+    width: 60%;
+    padding: 68px;
+    background: #7EA09F;
+    background-image: url(../img/donador/reciclaje/fondo-form-donacion.svg);
+    background-repeat: repeat;
+    background-size: 110%;
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10.5px);
+    -webkit-backdrop-filter: blur(10.5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    margin-bottom: 200px;
+}
+
+
+.formDonacion > form div .form-control{
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.87);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10.5px);
+    -webkit-backdrop-filter: blur(10.5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.formDonacion > form div label{
+    margin-top: 30px;
+    font-family: 'ABeeZee', sans-serif;
+    color: #322816;
+    font-size: 20px;
+}
+
+
+.formDonacion form div textarea{
+    resize: none;
+    margin-top: 10px;
+    height: 193px;
+}
+
+.formDonacion > form div input{
+    margin-top: 10px;
+}
+
+/*Eliminar donación*/
+
+.deleteDonacion{
+    background-color: #7798A3;
+    width: 100%;
+}
+
+.card_donacion{
+    background-color: #7EA09F;
+    background-image: url(../img/donador/reciclaje/fondo-form-donacion.svg);
+    background-repeat: repeat;
+    background-size: 115%;
+    border-top-right-radius: 60px; /* Aplica el borde curvado en la esquina superior derecha */
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2), -2px -2px 4px rgba(255, 255, 255, 0.4);
+    padding: 20px;
+}
+
+/* ---------------------BLOG COMENTARIOS---------------------- */
+.secDetailNew > .contenidoDetail > .invitacion-registro{    
+    padding: 120px;
+}
+
+.secDetailNew > .contenidoDetail > .invitacion-registro > h3,
+.secDetailNew > .contenidoDetail > .comentarios > h4{
+    font-family: Comfortaa;
+}
+
+.secDetailNew > .contenidoDetail > .invitacion-registro > a{
+    font-family: 'ABeeZee', sans-serif;
+    background-color: #E17957;
+    color: #482317;
+    border-radius: 24px;
+}
+
+.secDetailNew > .contenidoDetail > .invitacion-registro > a.iniciar{
+    font-family: 'ABeeZee', sans-serif;
+    background-color: #e1bc57;
+    color: #482317;
+    border-radius: 24px;
+}
+
+.secDetailNew > .contenidoDetail > .comentarios{
+    border-bottom: 1px dashed;
+    padding: 32px;
+}
+
+.secDetailNew > .contenidoDetail form div textarea{
+    width: 100%;
+    height: 120px;
+    border: none;
+    padding: 20px;
+    border-radius: 24px;
+    resize: none;
+    margin-bottom: 20px;
+    margin-top: 8%;
+}
+
+
+.secDetailNew > .contenidoDetail form div button{
+    background-color: #8CA33C;
+    color: #000;
+    font-family: ABeeZee;
+    border-radius: 24px;
+    padding: 12px;
+}
+
+.detalleMercado div div div div .infoEmpresa .autorDate a{
+    display: flex;
+    align-items: center;
+    color: #143715;
+    background-color: #dbe4c6;
+    border-radius: 20px;
+    width: 44%;
+    padding: 16px;
+    text-decoration: none;
+    font-family: 'ABeeZee', sans-serif;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.detaildonacion div div .donacion div .infodonacion .infoExtra a{
+    display: flex;
+    align-items: center;
+    color: #143715;
+    background-color: #dbe4c6;
+    border-radius: 20px;
+    width: 44%;
+    padding: 16px;
+    text-decoration: none;
+    font-family: 'ABeeZee', sans-serif;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    margin-left: 48%;
+}
+
+
+.detalleMercado div div div div .infoEmpresa .autorDate a ion-icon,
+.detaildonacion div div .donacion div .infodonacion .infoExtra a ion-icon{
+    font-size: 28px;
+    margin-right: 20px;
+}
+
+
+/* ------------------------------------------- */
+.regis > .regisSection.recuperarContra{
+    background-color: #daab96;
+}
+
+.regis > .regisSection.recuperarContra > form .botones{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.regis > .regisSection.recuperarContra > form .form-control{
+    background-color: white;
+}
+
+.regis > .regisSection.recuperarContra form > div button{
+    background-color: #5d6731;
+    color: white;
+    font-family: 'ABeeZee', sans-serif;
+    margin-left: 0; 
+    padding: 10px;
+    width: 230px; 
+    margin-top: 80px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+.regis > .regisSection.recuperarContra form > div a{
+    color: #000;
+    margin-top: 60px;
+    font-family: 'ABeeZee', sans-serif;
+    display: flex;
+    align-items: center;
+}
+
+
+.regis .regisSection form div.step .row div input#numero_celular{
+    margin-top: 8px;
+}
+
+.regis .regisSection form div.step .row div p{
+    font-size: 12px;
+    margin-top: 8px;
+}
+
+.regis > .regisSection > h1{
+    color: #482317;
+    font-weight: 600;
+    font-size: 30px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.regis .regisSection form div div .text-danger{
+    color: rgb(255, 255, 255);
+}
+
+.regis > .regisSection{
+    width: 54%;
+    padding: 68px;
+    background: #E17957;
+    border-radius: 16px;
+    box-shadow: 0px 5px 4px 0px rgba(0, 0, 0, 0.1);
+}
+.regis > .regisSection > .alquimiaBlanco{
+    background-image: url(../img/alquimia-blanco.svg);
+    height: 32px;
+    margin-bottom: 30px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.regis > .regisSection form div label{
+    font-size: 18px;
+    font-family: 'ABeeZee', sans-serif;
+    color: #482317;
+}
+
+.regis > .regisSection > form .form-control{
+    background-color: #EFB09B;
+    border: none;
+}
+
+.regis > .regisSection form > div > div > div > label{
+    margin-top: 10px;
+}
+
+
+.regis > .regisSection form div .password{
+    margin-top: 20px;
+}
+
+.regis > .regisSection form > div button {
+    background-color: #5d6731;
+    color: white;
+    font-family: 'ABeeZee', sans-serif;
+    margin-left: 32%;
+    padding: 10px;
+    width: 140px;
+    margin-top: 80px;
+    border-radius: 20px;
+}
+
+.regis .regisSection form div button:hover{
+    background-color: #172a17;
+    color: white;
+
+}
+
+.regis > .regisSection form > #step2 .botones,
+.regis > .regisSection form > #step3 .botones{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 65%;
+    margin-top: 30px;
+}
+
+.regis > .regisSection form > #step2 .botones button,
+.regis > .regisSection form > #step3 .botones button{
+    padding: 10px;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+.regis > .regisSection form > #step2 .botones button.prev-step,
+.regis > .regisSection form > #step3 .botones button.prev-step{
+    background-color: #2f341a;
+}
+
+.regis > .regisSection form > #step2 div div select,
+.regis > .regisSection form > #step3 div select,
+.regis > .regisSection form > #step2 div div select option,
+.regis > .regisSection form > #step3 div select option{
+    background-color: #EFB09B;
+    border: none;
+}
+
+
+
+/* ---------------------------------------------------------- */
+
+.regis .regisSection form div .avatares{
+    display: flex;
+    justify-content: center;
+}
+
+.login,
+.regis{
+    background-color: #F4FCF6;
+    padding-left: 410px;
+    padding-right: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../img/login-back.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: bottom;
+    height: 1000px;
+}
+
+.login > .loginSection > .alquimia{
+    background-image: url(../img/alquimia.svg);
+    height: 32px;
+    margin-bottom: 30px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.login > .loginSection{
+    width: 54%;
+    padding: 68px;
+    background: #F4FCF6;
+    border-radius: 16px;
+    box-shadow: 0px 5px 4px 0px rgba(0, 0, 0, 0.1);
+}
+
+.login > .loginSection form,
+.regis > .regisSection form{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 60px;
+}
+
+.login > .loginSection > h1{
+    color: #E17957;
+    font-weight: 600;
+    font-size: 30px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.login > .loginSection > form .form-control{
+    background-color: #E6EEE8;
+    border: none;
+}
+
+.login > .loginSection > form div.mb-3,
+.regis > .regisSection > form div.mb-3{
+    margin-top: 33px;
+}
+
+.login > .loginSection > form div label{
+    font-size: 18px;
+    font-family: 'ABeeZee', sans-serif;
+}
+
+.login > .loginSection > form div .password{
+    margin-top: 20px;
+}
+
+.login > .loginSection > form > .botones{
+    display: flex;
+    flex-direction: column;
+}
+
+.login > .loginSection > form > .botones button {
+    background-color: #E17957;
+    color: #482317;
+    border-radius: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding: 10px;
+    margin-top: 80px;
+    font-family: 'ABeeZee', sans-serif;
+}
+
+.login > .loginSection > form > .botones a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    text-align: center;
+    font-family: 'ABeeZee', sans-serif;
+}
+
+.login > .loginSection > form > div .password-field > input,
+.regis > .regisSection form > div div > .password > .password-field > input,
+.regis > .regisSection.recuperarContra form > div div.password-field > input{
+    position: relative;
+}
+
+.login > .loginSection > form > div div.password-field,
+.regis > .regisSection form > div div.password-field,
+.regis > .regisSection.recuperarContra form > div div.password-field  {
+    position: relative;
+}
+
+.login > .loginSection > form > div > .password-field > .toggle-password,
+.regis > .regisSection form > div > div  .password-field > .toggle-password,
+.regis > .regisSection.recuperarContra form > div > div.password-field > .toggle-password {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.login > .loginSection > form > div .password-field .toggle-password ion-icon,
+.regis > .regisSection form > div .password-field .toggle-password ion-icon  {
+    font-size: 24px;
+}
+/**************TERMINA ABRIL**********************/
+
+
+p{
+    font-family: 'ABeeZee', sans-serif;
+    color: black;
+}
+
+
+
+/* --------------------------------------------- */
+
+.nosotros {
+    padding: 200px;
+    background-image: url(../img/nosotros/nosotros-back.svg);
+    background-size: 100%;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    height: 114vh;
+
+}
+
+.nosotros > h1{
+    font-weight: 600;
+    color: #162917;
+}
+
+.nosotros > .containerNosotros {
+    display: flex;
+}
+
+.nosotros  > .containerNosotros > img{
+    border-radius: 76px;
+}
+
+.nosotros  > .containerNosotros > div h1{
+    font-weight: bold;
+    font-size: 5pc;
+}
+
+.nosotros  > .containerNosotros > div p:nth-child(3){
+    margin-top: 6%;
+    margin-right: 10px;
+}
+
+.marca{
+    padding: 200px;
+    background-image: url(../img/nosotros/marca-back.svg);
+    background-size: 100%;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    height: 160vh;
+}
+
+.marca > h2{
+    font-weight: bold;
+    font-size: 82px;
+}
+
+.marca > p{
+    margin-bottom: 90px;
+}
+
+.marca > .card-group .card{
+    background-color: #617143;
+    box-shadow: none;
+    border: none;
+    border-radius: 31px;
+}
+
+.marca > .card-group .card1,
+.marca > .card-group .card2,
+.marca > .card-group .card3{
+    margin-right: 120px;
+}
+
+.marca > .card-group .card .card-body > h3{
+    color: white;
+    font-family: Comfortaa;
+    font-size: 22px;
+}
+
+.marca > .card-group .card .card-body{
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.marca > .card-group .card img{
+    border-bottom-left-radius: 67px;
+    border-bottom-right-radius: 67px;
+}
+
+.alquimiaNosotros{
+    background-image: url(../img/nosotros/alquimia-reticula.svg);
+    background-size: 100%;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+}
+
+.alquimiaNosotros > p{
+    padding-top: 271px;
+    padding-left: 128px;
+    margin-right: 54%;
+    font-weight: 600;
+    line-height: 38px;
+}
+
+.line{
+    background-image: url(../img/nosotros/line.svg);
+    background-repeat: no-repeat;
+    height: 50vh;
+    background-position: 40vh;
+}
+
+.peques{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.peques > .jor,
+.peques > .abril{
+    display: flex;
+    align-items: center;
+    width: 82%;
+}
+.peques > .jor div{
+    margin-right: 120px;
+}
+
+.peques > .abril div{
+    margin-left: 120px;
+}
+
+.team{
+    padding: 200px;
+    background-image: url(../img/nosotros/team-back.svg);
+    background-size: 100%;
+    background-position-x: center;
+    background-repeat: no-repeat;
+}
+
+.team div {
+    display: flex;
+    justify-content: space-around;
+}
+
+.team div img{
+    border-radius: 100px;
+    /* position: absolute; */
+}
+.team h2{
+    font-weight: bold;
+    font-size: 82px;
+    margin-bottom: 100px;
+}
+
+.team div .hoja{
+    background-image: url(../img/nosotros/hoja-foto.svg);
+    background-size: 100%;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    width: 120px;
+    /* position: relative; */
+}
+
+/*-------------------------------------------- */
+
+
+.detailEmpresa div .card{
+    background-color: #f4fcf6;
+    border: none;
+    box-shadow: none;
+}
+
+.detailEmpresa div .card .empresa div img{
+    height: 284px;
+    object-fit: cover;
+}
+
+.detailEmpresa div .card h1{
+    margin-top: 100px;
+}   
+/*------------------------ 404--------- */
+
+.paginaError{
+    background-color: #EBE4D1;
+    padding: 17%;
+    background-image: url(../img/404/404-back.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70%;
+    height: 922px;
+}
+
+.paginaError h1{
+    font-family: Comfortaa;
+    font-size: 46px;
+}
+
+.paginaError p{
+    margin-right: 50%;
+}
+
+.paginaError a{
+    background-color: #8BA236;
+    padding: 12px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 37px;
+    margin-right: 20px;
+}
+.paginaError a:last-child{
+    background-color: #8BB1BE;
+}
+
+
+/* ----------------------------USUARIOS PERFIL---------------------------- */
+.usuarios{
+    padding: 130px;
+    background-image: url(../img/perfil.back.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.usuarios div h1{
+    color: #E07857;
+    margin-bottom: 120px;
+    font-size: 64px;
+}
+
+.usuarios div h1 strong{
+    font-weight: bold;
+}
+
+.usuarios div div div div .image-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.usuarios div div div div .image-container > a{
+    margin-top: 40px;
+    background-color: #92A242;
+    color: white;
+    font-family: ABeeZee;
+    border-radius: 48px;
+    width: 214.115px;
+    height: 47.888px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+}
+
+.usuarios .introDash .container .row div .authorDate p{
+    display: flex;
+    flex-direction: column;
+}
+
+.usuarios .introDash .container .row div .authorDate p strong{
+    color: #535a2e;
+    font-size: 26px;
+}
+
+/*-------------------------------------------- */
+
+
+/**MERCADO**/
+
+.parrafo-con-linea {
+    border-bottom: 1px solid black;
+}
+.parrafo-con-linea-roja {
+    border-bottom: 1px solid #E07857
+}
+
+.donador-main .parrafo-con-linea-roja {
+    border-bottom: 1px solid #7798a3
+}
+
+.parrafo-con-linea-amarilla {
+    border-bottom: 1px solid #FED46E;
+}
+
+.parrafo-con-linea-arriba{
+    border-top: 1px solid black;
+}
+
+.consumidor-main > .secMercado > div div div  .card_mercado,
+.consumidor-main > .userProduct > div div div  .card_mercado{
+    background-color:rgba(255, 143, 107, 0.29);
+    border-top-right-radius: 60px; /* Aplica el borde curvado en la esquina superior derecha */
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2), -2px -2px 4px rgba(255, 255, 255, 0.4);
+    padding: 10px;
+}
+
+.donador-main > .secMercado > div div div  .card_mercado,
+.donador-main > .userProduct > div div div  .card_mercado{
+    background-color:rgb(119 152 163 / 53%);
+    border-top-right-radius: 60px; /* Aplica el borde curvado en la esquina superior derecha */
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2), -2px -2px 4px rgba(255, 255, 255, 0.4);
+    padding: 10px;
+}
+
+.imagen-redondeada {
+    border-top-right-radius: 60px; /* Aplica el borde curvado en la esquina superior derecha */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 80%; /* Establece el ancho al 100% */
+    height: 300px; /* Establece la altura deseada */
+    object-fit: cover; /* Ajusta la imagen dentro del contenedor */
+    transition: transform 0.5s ease;
+
+}
+
+
+.imagen-redondeada:hover {
+    border-top-right-radius: 60px; /* Aplica el borde curvado en la esquina superior derecha */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 80%; /* Establece el ancho al 100% */
+    filter: saturate(2);
+    object-fit: cover; /* Ajusta la imagen dentro del contenedor */
+    transform: scale(1.03);
+
+}
+
+.imagen-redondeada-static{
+    border-top-right-radius: 60px; /* Aplica el borde curvado en la esquina superior derecha */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 80%; /* Establece el ancho al 100% */
+    height: 300px; /* Establece la altura deseada */
+    object-fit: cover; /* Ajusta la imagen dentro del contenedor */
+}
+
+
+.imagen-redondeada-detalle {
+    border-top-right-radius: 60px; /* Aplica el borde curvado en la esquina superior derecha */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 100%; /* Establece el ancho al 100% */
+    height: 600px; /* Establece la altura deseada */
+    object-fit: cover; /* Ajusta la imagen dentro del contenedor */
+}
+
+
+.consumidor-main .secMercado{
+    background-color: #FED46E;
+    background-image: url(../img/consumidor/mercado/fondo-mercado.svg);
+    background-repeat: repeat;
+    background-size: 100%; /* Ajustar el tamaño del SVG */
+}
+
+.donador-main .secMercado{
+    background-color: #ADC2B5;
+}
+
+.consumidor-main .secMercado > div > h1,
+.donador-main .secMercado > div > h1{
+    color: #000;
+    font-size: 32px;
+    font-family: ABeeZee;
+    font-weight: 400;
+}
+
+.consumidor-main .secMercado > div > h2{
+    color: #E07857;
+    font-size: 32px;
+    font-family: ABeeZee;
+    font-weight: 400;
+
+}
+
+.donador-main .secMercado h2{
+    color: #122931;
+}
+
+.donador-main .secMercado > div > h2{
+    color: #122931;
+    font-size: 32px;
+    font-family: ABeeZee;
+    font-weight: 400;
+
+}
+
+
+.tituloPrecio{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.tituloPrecio > h2{
+    color: #000;
+    font-size: 26px;
+    font-family: ABeeZee;
+    font-weight: 400;
+    max-width: 200px;
+}
+
+.donador-main > .secMercado > div div div  .card_mercado .custom-btn-mercado{
+    border-radius: 16px;
+    background: rgb(173 194 181);
+    border-radius: 16px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+
+.consumidor-main > .secMercado > div div div  .card_mercado .custom-btn-mercado{
+    border-radius: 16px;
+    background: rgba(255, 144, 107, 0.746);
+    border-radius: 16px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+
+/**Detalle mercado**/
+
+.detalleMercado{
+    background-color: #C9B699;
+    background-image: url(../img/consumidor/mercado/fondo-mercado-detalle.svg);
+    background-repeat: repeat;
+    background-size: 100%; /* Ajustar el tamaño del SVG */
+}
+
+.detalleMercado > div > div > h1 {
+    color: #000;
+    font-size: 32px;
+    font-family: ABeeZee;
+}
+
+.textoBlanco{
+    color: #FFF;
+}
+
+
+.costume-btn-volver{
+    background: #EBE4D2;
+    border-radius: 16px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.costume-btn-volver:hover {
+    border: 3px solid  #6a6761;
+    background: #EBE4D2;
+    border-radius: 16px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.chatExplicacion{
+    width: 200px;
+}
+
+
+.autorDate > h2 {
+    font-size: 20px;
+    font-family: ABeeZee;
+    color: #000;
+}
+
+/**tus ventas**/
+
+.tusVentas > h1 {
+    font-size: 32px;
+    font-family: ABeeZee;
+    color: #000;
+}
+
+
+/**Eliminar elementos de mercado**/
+.donador-main .borrarMercado{
+    background-color: #ADC2B5;
+}
+.donador-main .borrarMercado .titulo{
+    color: white;
+}
+
+.borrarMercado{
+    background-color: #FED46E;
+}
+
+.borrarMercado > h1{
+    color: #000;
+    font-size: 32px;
+    font-family: ABeeZee;
+    font-weight: 400;
+}
+
+/**Tus compras**/
+
+.textoNegro{
+    color: #000;
+    font-size: 32px;
+    font-family: ABeeZee;
+    font-weight: 400;
+}
+
+.donador-main .userProduct{
+    background-color: #ADC2B5
+}
+
+.userProduct{
+    background-color: #FED46E;
+}
+
+.userProduct div div div div div p span{
+    font-weight: bolder;
+}
+
+/**Form Mecardo**/
+
+.donador-main .formNew{
+    background-color: #ADC2B5;
+}
+
+.formNew
+{
+    background-color: #FED46E;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formNew > form > div .required{
+    color: red;
+    margin-left: 5px;
+}
+
+
+.formNew > form > .etiquetas > .labelEti{
+    margin-right: 70%;
+}
+
+.formNew > form div > p
+{
+    color: gray;
+    font-size: 12px;
+}
+
+
+.donador-main .formNew > form{
+    background: #7798a34a;
+    background-image: url(../img/donador/reciclaje/fondo-form-donacion.svg);
+
+}
+
+.formNew > form
+{
+    width: 60%;
+    padding: 68px;
+    background: #FF8F6B4A;
+    background-image: url(../img/consumidor/mercado/fondo-form-mercado.svg);
+    background-repeat: repeat;
+    background-size: 69%;
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10.5px);
+    -webkit-backdrop-filter: blur(10.5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    margin-bottom: 200px;
+}
+
+
+.formNew > form div .form-control{
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.87);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10.5px);
+    -webkit-backdrop-filter: blur(10.5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.formNew > form div label{
+    margin-top: 30px;
+    font-family: 'ABeeZee', sans-serif;
+    color: #322816;
+    font-size: 20px;
+}
+
+
+.formNew form div textarea{
+    resize: none;
+    margin-top: 10px;
+    height: 193px;
+}
+
+.formNew > form div input{
+    margin-top: 10px;
+}
+
+.formNew form > .botones{
+    margin-top: 60px;
+}
+
+.formNew form > .botones > button{
+    background-color: #395F44;
+    color: white;
+    border: none;
+}
+
+/***Delete / no recuerdo en que usamos, pero usamos jaja***/
+
+.deleteBook {
+    /* background-color: #fbeadb; */
+    height: 100%;
+}
+
+.deleteBook h1 {
+    color: #617143;
+    padding-top: 100px;
+    padding-left: 50px;
+}
+
+.deleteBook > form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.deleteBook > form > p {
+    font-size: 20px;
+    font-family: 'Mochiy Pop P One', sans-serif;
+}
+.deleteBook > form > .d-grid{
+    font-size: 20px;
+
+}
+
+
+.deleteBook > form > .d-grid > a{
+    margin-left: 30px;
+}
+
+
+/******Elementos para reciclar "ver reciclaje" *****/
+
+.secDonacion{
+    background-color: #E07857;
+    width: 100%;
+    background-image: url(../img/consumidor/mercado/fondo-donacion-elementos.svg);
+    background-size: 100%;
+    background-repeat: repeat;
+    background-size: 100%;
+    background-position-y: -170px;
+}
+
+/* ------------EMPRESAS------------------- */
+.empresasAdmin{
+    background-color: #edebe4;
+}
+
+.blogAdmin{
+    background-color: #ccdab4;
+}
+
+.constume-btn-admin{
+    background: #255126;
+    color: white;
+    padding-left: 25px;
+    padding-right:  25px;
+    border-radius: 16px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+
+.constume-btn-admin:hover{
+    background:#255126;
+    border: 3px solid   #9DC28C;
+    border-radius: 16px;
+    padding-left: 30px;
+    padding-right: 30px;
+    color: white;
+}
+
+.btns-editar-eliminar-empresa{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.btns-editar-eliminar-empresa a {
+    display: flex;
+    align-items: center;
+}
+
+.empresasAdmin .introEmpresasAdmin > div{
+    background-color: #9dc28c;
+}
+
+.empresasAdmin > div div ul li .card{
+    background-color: #9dc28c;
+    border-top-right-radius: 60px; /* Aplica el borde curvado en la esquina superior derecha */
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2), -2px -2px 4px rgba(255, 255, 255, 0.4);
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.empresasAdmin > div div ul li .card div .imgEmpresa{
+    border-top-right-radius: 60px; /* Aplica el borde curvado en la esquina superior derecha */
+}
+
+.empresasAdmin > div div ul li .card_content {
+    padding: 30px;
+    margin: 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.empresasAdmin > div div ul li .card .card_content::-webkit-scrollbar {
+    width: 8px;
+}
+
+.empresasAdmin > div div ul li .card .card_content::-webkit-scrollbar-track {
+    box-shadow: 0;
+    border-radius: 0;
+}
+
+.empresasAdmin > div div ul li .card .card_content::-webkit-scrollbar-thumb {
+    background:  #617143;
+    border-radius: 15px;
+}
+
+.empresasAdmin > div div ul li div .card_title {
+    position: relative;
+    margin: 0 0 24px;
+    padding-bottom: 10px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    color: #617244;
+}
+
+.empresasAdmin > div div ul li .card div .card_title::after {
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color:  #617143;
+    content: "";
+}
+
+.empresasAdmin > div div ul li .card div .card_text hr {
+    margin: 24px auto;
+    width: 50px;
+    border-top: 2px solid  #617143;
+}
+
+.empresasAdmin > div div ul li .card div .card_text p {
+    margin: 0 0 24px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.empresasAdmin > div div ul li .card div .card_text p:last-child {
+    margin: 0;
+}
+
+.formNew.formNewAdmin{
+    background-color: #ccdab4;
+}
+
+.formNew.formNewAdmin form,
+.editBook.editBookAdmin form{
+    background-color: #8fa36d70;
+}
+
+.form-switch .form-check-label{
+    padding: 30px;
+}
+
+.form-check-input:checked{
+    background-color: #617244;
+    border-color: #617244;
+}
+
+.donador-main .container .custom-btn-eliminar{
+    background-color: #8B0000;
+    color:white;
+    border-radius: 16px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.container .custom-btn-eliminar{
+    background-color: #e17957;
+    color:#570000;
+    border-radius: 16px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.container .custom-btn-editar{
+    background-color:  #617143;
+    color: #fff;
+    border-radius: 16px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+
+.empresasAdmin > div div .cards {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.empresasAdmin > div div ul .cards_item {
+    display: flex;
+    padding: 1rem;
+    flex-direction: column;
+}
+
+.empresasAdmin > div div ul li .card_image {
+    position: relative;
+    max-height: 250px;
+}
+
+.empresasAdmin > div div ul li .card .card_image img {
+    width: 100%;
+    height: 90%;
+    object-fit: cover;
+}
+
+.cantidadCard{
+    border-radius: 17px;
+    padding: 16px;
+    width: 324px;
+    margin: 10px 0px;
+    background: white;
+    box-shadow: 0px 6px 6px -3px rgba(0,0,0,0.1);
+    margin-top: 10%;
+}
+
+.cantidadCard > div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.cantidadCard p{
+    margin-top: 26px;
+    font-size: 20px;
+}
+
+.cantidadCard > div ion-icon{
+    font-size: 50px;
+    color: #e17957;
+}
+
+.circulo {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #e17957;
+    text-align: center;
+    line-height: 30px;
+    /* font-weight: bold; */
+    font-size: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+/**PUBLICAR EMPRESA ADMIN**/
+
+.formEmpresa
+{
+    background-color:#edebe4;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.formEmpresa > form > .etiquetas{
+    display: flex;
+    align-items: baseline;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.formEmpresa > form > div .required{
+    color: rgb(73, 13, 13);
+    margin-left: 5px;
+}
+
+.formEmpresa > form > .etiquetas > .labelEti{
+    margin-right: 70%;
+}
+
+.formEmpresa> form div > p
+{
+    color: gray;
+    font-size: 12px;
+}
+
+.formEmpresa h1
+{
+    font-weight: 600;
+    color: #000;
+    font-size: 32px;
+    font-family: ABeeZee;
+    margin: 100px 0 100px 0;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+.formEmpresa > form
+{
+    width: 60%;
+    padding: 68px;
+    background: #94a37a94;
+    background-image: url(../img/consumidor/mercado/fondo-form-empresas.svg);
+    background-repeat: repeat;
+    background-size: 100%;
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10.5px);
+    -webkit-backdrop-filter: blur(10.5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    margin-bottom: 200px;
+}
+
+
+.formEmpresa > form div .form-control
+{
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.87);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10.5px);
+    -webkit-backdrop-filter: blur(10.5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.formEmpresa > form div label{
+    margin-top: 30px;
+    font-family: 'ABeeZee', sans-serif;
+    color: #322816;
+    font-size: 20px;
+}
+
+
+.formEmpresa form div textarea
+{
+    resize: none;
+    margin-top: 10px;
+    height: 193px;
+}
+
+.formEmpresa > form div input{
+    margin-top: 10px;
+}
+
+
+/***Eliminar empresa**/
+
+.deleteEmpresa{
+    background-color: #edebe4;
+    width: 100%;
+}
+
+.titulo{
+    color: #dd7553;
+}
+
+.tituloNegro{
+    color: #000;
+}
+
+
+/*-------------------------------------------- */
+
+
+.secNews{
+    background-color: #f3b300;
+}
+
+.secNews > h1{
+
+    margin-left: 100px;
+    padding: 150px;
+    color: #617143;
+}
+
+.secNews > .container .row .col-md-6 .card{
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10.5px);
+    -webkit-backdrop-filter: blur(10.5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+
+.secDetailNew img{
+    padding-right: 300px;
+    padding-left: 300px;
+}
+
+.secDetailNew .contenidoDetail h2{
+    padding: 30px;
+    font-weight: 600;
+    color: #5c6735;
+}
+
+.secDetailNew .contenidoDetail{
+    padding: 106px;
+}
+
+.secDetailNew .contenidoDetail a{
+    margin-left: 40px;
+}
+
+.secDetailNew p,
+.secDetailNew h3{
+    margin-left: 40px;
+    color: black;
+}
+
+.secDetailNew .authorDate{
+    display: flex;
+    margin-left: 14px;
+    margin-top: 14px;
+    border-bottom: 1px solid;
+    border-color: #487949;
+}
+
+.detalledonacion{
+    background-color: #7798A3;
+}
+
+.detalledonacion div h1{
+    color: #000;
+    margin: 60px;
+}
+
+.detalledonacion div .evento-data{
+    background-color: #7FA09F;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.detalledonacion div .butons{
+    margin-top: 50px;
+}
+
+.donador-mainReci .deleteEvento{
+    background-color: #7798A3;
+}
+
+.donador-mainReci .deleteEvento div h1{
+    color: #000;
+}
+
+
+.donador-mainReci .detaildonacionDonante div form div textarea{
+    resize: none;
+}
+
+/* ---------------------------------------- */
+
+
+
+/* ------------------------------------------- */
+
+/* ------------------------------------------- */
+
+.formNew,
+.editBook{
+    background-color: #FED46E;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.editBook.editBookAdmin{
+    background-color: #ccdab4;
+}
+
+
+.formNew > form > div .required{
+    color: red;
+    margin-left: 5px;
+}
+
+.editBook > form > .etiquetas > .labelEti,
+.formNew > form > .etiquetas > .labelEti{
+    margin-right: 70%;
+}
+
+.formNew > form div > p,
+.editBook > form div > p{
+    color: gray;
+    font-size: 12px;
+}
+
+.donador-main > .formNew h1,
+.donador-main > .editBook h1{
+    color: #324349;
+}
+
+.formNew h1,
+.editBook h1{
+    font-weight: 600;
+    color: #7c3f2c;
+    font-size: 54px;
+    font-family: Comfortaa;
+    margin: 100px 0 100px 0;
+    font-weight: 400;
+}
+
+.adminIndex h1,
+.perfil h1{
+    color: #617143;
+    font-weight: 600;
+}
+
+.perfil{
+    padding: 220px;
+}
+
+.perfil > a{
+    background-color: #255126;
+    color: white;
+}
+
+.perfil > a:hover{
+    background-color: #162917;
+    color: white;
+}
+
+.formNew > form,
+.editBook form{
+    width: 80%;
+    padding: 68px;
+    background: #FF8F6B4A;
+    background-image: url(../img/consumidor/mercado/fondo-form-mercado.svg);
+    background-repeat: repeat;
+    background-size: 69%;
+    border-radius: 16px;
+    background-position: -145px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10.5px);
+    -webkit-backdrop-filter: blur(10.5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+
+.formNew > form div .form-control,
+.editBook form div .form-control{
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.87);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10.5px);
+    -webkit-backdrop-filter: blur(10.5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.editBook form div label,
+.editBook form div p{
+    margin-top: 20px;
+    padding-bottom: 20px;
+    font-family: 'ABeeZee', sans-serif;
+}
+
+.formNew form div textarea,
+.editBook form div textarea{
+    resize: none;
+    margin-top: 10px;
+    height: 193px;
+}
+
+.formNew > form div input,
+.editBook form div input{
+    margin-top: 10px;
+}
+
+.formNew form > .botones,
+.editBook form .botones{
+    margin-top: 60px;
+}
+
+.formNew form > .botones > button,
+.editBook form > .botones > button{
+    background-color: #395F44;
+    color: white;
+    border: none;
+}
+
+.editBook form > .botones > a {
+    margin-left: 20px;
+}
+/* ------------------------------------------- */
+
+.deleteBook {
+    /* background-color: #fbeadb; */
+    height: 100%;
+}
+
+.deleteBook h1 {
+    color: #617143;
+    padding-top: 100px;
+    padding-left: 50px;
+}
+
+.deleteBook > form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.deleteBook > form > p {
+    font-size: 20px;
+    font-family: 'Mochiy Pop P One', sans-serif;
+}
+.deleteBook > form > .d-grid{
+    font-size: 20px;
+
+}
+
+
+.deleteBook > form > .d-grid > a{
+    margin-left: 30px;
+}
+/* ---------------------AVATARES----------------------------- */
+
+.image-container {
+    position: relative;
+    width: 100px; /* Ajusta el ancho según tus necesidades */
+    height: 100px; /* Ajusta la altura según tus necesidades */
+}
+
+.circle-consumidor {
+    position: absolute;
+    top: -10px;
+    left: 0;
+    width: 100%;
+    height: 150%;
+    background: #D48662;
+    border-radius: 50%;
+}
+
+.circle-donador {
+    position: absolute;
+    top: -10px;
+    left: 0;
+    width: 100%;
+    height: 150%;
+    background: #B6C475;
+    border-radius: 50%;
+}
+
+.circle-admin {
+    position: absolute;
+    top: -10px;
+    left: 0;
+    width: 100%;
+    height: 160%;
+    background: #7C905A;
+    border-radius: 50%;
+}
+
+.image-container img {
+    position: relative;
+    z-index: 1;
+    width: 100%; /* Ajusta el ancho de la imagen para que ocupe todo el contenedor */
+    height: auto; /* Ajusta la altura automáticamente para mantener la proporción */
+}
+
+/*LA IMAGEN DE EDITAR PERFIL AVATAR*/
+.avatar-editar{
+    width: 150px; /* Ajusta el tamaño deseado para todas las imágenes */
+    height: 150px;
+}
+
+.radio-avatar input[type="radio"] {
+    display: none; /* Oculta el botón de opción real */
+}
+
+.radio-avatar .checkmark {
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.radio-avatar .checkmark ion-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 30px; /* Ajusta el tamaño del icono según tus necesidades */
+    color: #b6b4b4; /* Ajusta el color del icono según tus necesidades */
+}
+
+.radio-avatar input[type="radio"]:checked + .checkmark ion-icon {
+    color: #617143;
+    font-size: 30px; /* Establece el color del icono cuando está seleccionado */
+}
+
+
+/*La imagen de SELECCION EN REGISTRO DE AVATAR */
+
+.avatar-registro{
+    width: 100px; /* Ajusta el tamaño deseado para todas las imágenes */
+    height: 100px;
+}
+
+
+/* ----------------------TITULO DE EMPRESAS--------------------- */
+
+
+.titulo{
+    color: #dd7553;
+}
+
+
+/* ------------------------------------------- */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75px;
+    background-color: #dbe4c6;
+    color: #fff;
+    padding: 90px;
+}
+
+.roles{
+    box-shadow: inset 0px 0px 13px -4px rgba(0,0,0,0.1);
+    display: flex;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.roles div{
+    padding: 134px;
+}
+
+.roles div p{
+    color: rgb(59, 39, 39);
+    font-family: Comfortaa;
+    font-size: 22px;
+    border-bottom: 1px solid;
+}
+
+.roles > .consumidor{
+    background-color: #FED46E;    
+    width: 50%;
+    background-image: url(../img/roles/consumidor.svg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-position-x: -56px;
+    background-size: 88%;
+}
+
+.roles > .donante{
+    background-color: #ADC2B5;    
+    width: 50%;
+    background-image: url(../img/roles/donante.svg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-position-x: 106%;
+    background-size: 44%;
+}
+
+.roles div ul {
+    height: 240px;
+    font-family: ABeeZee;   
+
+}
+
+/* .footerMain {
+    background-color: #F8CBA6;
+    color: #392310;
+
+} */
+
+footer p {
+    margin: 0;
+}
+footer.footer ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+}
+
+footer ul li{
+    margin: 32px;
+    font-family: ABeeZee;   
+}
+
+footer.footer ul li button{
+    display: flex;
+    align-items: center;
+}
+
+footer ul li button ion-icon{
+    font-size: 28px;
+    margin-left: 8px;
+}
+
+.userProduct div div div div div p span{
+    font-weight: bolder;
+}
+
+/* ------------------- Cuadros de administracion ---------------- */
+.container .custom-btn-eliminar{
+    background-color: #e17957;
+    color:#570000;
+    border-radius: 16px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+.container .custom-btn-editar{
+    background-color:  #617143;
+    color: #fff;
+    border-radius: 16px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+
+    .cards {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .cards_item {
+    display: flex;
+    padding: 1rem;
+  }
+  
+  .card_image {
+    position: relative;
+    max-height: 250px;
+  }
+  
+  .card_image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+.note {
+    top: 8px;
+    left: 8px;
+    padding: 4px 8px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+@media (min-width: 40rem) {
+    .cards_item {
+      width: 50%;
+    }
+  }
+  
+  @media (min-width: 56rem) {
+    .cards_item {
+      width: 33.3333%;
+    }
+  }
+  
+  .card {
+    background-color: white;
+    border-radius: 0.25rem;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2), -2px -2px 4px rgba(255, 255, 255, 0.4);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.card_content {
+    position: relative;
+    padding: 16px 12px 32px 24px;
+    margin: 16px 8px 8px 0;
+}
+
+.card_content::-webkit-scrollbar {
+    width: 8px;
+}
+
+.card_content::-webkit-scrollbar-track {
+    box-shadow: 0;
+    border-radius: 0;
+}
+
+.card_content::-webkit-scrollbar-thumb {
+    background:  #617143;
+    border-radius: 15px;
+}
+
+.card_title {
+    position: relative;
+    margin: 0 0 24px;
+    padding-bottom: 10px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.card_title::after {
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color:  #617143;
+    content: "";
+}
+
+hr {
+    margin: 24px auto;
+    width: 50px;
+    border-top: 2px solid  #617143;
+}
+
+.card_text p {
+    margin: 0 0 24px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.card_text p:last-child {
+    margin: 0;
+}
+
+.adminDash{
+    padding: 100px;
+    min-height: 94vh;
+}
+
+.adminDash > div .cardsAdmin{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+/* ------------------ SECCION EMPRESAS----------------- */
+.secEmpresa {
+    background-image: url(../img/empresas/empresas-back.svg);
+    background-repeat: no-repeat;
+    background-size: 47%;
+    background-position-x: 108%;
+    background-position-y: 213px;
+}
+
+.secEmpresa > .empresasContenido h1{
+    font-weight: 600;
+    font-size: 94px;
+    margin-right: 30%;
+    font-weight: bold;
+}
+
+.secEmpresa > .empresasContenido{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    height: 72vh;
+    padding: 120px;
+}
+
+.secEmpresa > .empresasContenido p{
+    margin-right: 50%;
+}
+
+.secEmpresa > .empresasContenido a{
+    background-color: #255126;
+    color: white;
+}
+
+.secEmpresa > article ul{
+    list-style: none;
+    border-top: 1px dashed #617143;
+}
+
+.secEmpresa > article > ul > li{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 54px;
+}
+
+.secEmpresa > article > ul > li div{
+    margin-left: 170px;
+}
+
+.secEmpresa > .empresasNuevas{
+    padding: 120px;
+    height: 106vh;
+    background-image: url(../img/empresas/nuevas-empresas.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.secEmpresa > .empresasNuevas div p{
+    margin-right: 18%;
+}
+
+.secEmpresa > .empresasNuevas div h2{
+    font-weight: bold;
+    margin-bottom: 32px;
+}
+
+.secEmpresa > .empresasNuevas div a{
+    background-color: #255126;
+    color: white;
+}
+
+/* --------------------- MOBILE --------------- */
+@media (max-width: 1439px) {
+    .sidebar {
+        position: fixed;
+        top: 0;
+        left: -330px;
+        /* Inicialmente oculto */
+        width: 250px;
+        height: 100%;
+        background-color: #f0f0f0;
+        transition: left 0.3s ease;
+        /* Animación de despliegue */
+    }
+
+    .sidebar.active {
+        left: 0;
+        min-width: 42%;
+        /* Mostrar cuando está activo */
+    }
+
+    /* Estilos adicionales para el botón de hamburguesa */
+    .hamburger-btn {
+        position: fixed;
+        top: 10px;
+        left: 10px;
+        z-index: 999;
+        background-color: transparent;
+        border: none;
+        font-size: 24px;
+        cursor: pointer;
+    }
+}
+
+@media (min-width: 1440px) {
+    .hamburger-btn {
+        display: none;
+    }
+}
+
+@media (max-width: 1440px) {
+    html body .main > .sidebar.consumidor-navbarMercado,
+    html body .main > .sidebar.donador-navbar,
+    html body .main > .sidebar.admin-navbar{
+        z-index: 1;
+    }
+
+    .inicio > .portada {
+        background-size: 100%;
+        background-position: center 12px;
+        height: 106vh;
+        padding-top: 6%;
+    }
+    .portada > p {
+        font-family: 'ABeeZee', sans-serif;
+        padding-right: 14%;
+        text-align: end;
+        margin-top: 20px;
+    }
+    .bienvenidos > .bievenidaInfo {
+        padding: 40px;
+    }
+    .bienvenidos > .bievenidaInfo > p {
+        margin-right: 47%;
+    }
+    .cardsHome {
+        padding: 50px;
+    }
+    .cardsHome div .card1,
+    .cardsHome div .card2,
+    .cardsHome div .card3 {
+        margin-right: 20px;
+    }
+
+    /* nosotros */
+
+    .nosotros {
+        padding: 150px;
+        background-image: url(../img/nosotros/nosotros-back.svg);
+        background-size: 100%;
+        background-position-x: center;
+        background-repeat: no-repeat;
+        height: 114vh;
+    }
+    .nosotros > .containerNosotros {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .marca {
+        padding: 50px;
+        margin-top: 70%;
+        background-image: url(../img/nosotros/marca-back.svg);
+        background-size: 100%;
+        background-position: center 138px;
+        background-repeat: no-repeat;
+        height: 122vh;
+    }
+
+    .alquimiaNosotros {
+        background-image: url(../img/nosotros/alquimia-reticula.svg);
+        background-size: 100%;
+        background-position-x: center;
+        background-repeat: no-repeat;
+        height: 52vh;
+    }
+
+    .alquimiaNosotros > p {
+        padding-top: 76px;
+    }
+
+    .peques > .jor{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .peques > .jor div,
+    .peques > .abril div{
+        margin-left: 0;
+        margin-right: 0;
+        padding: 40px;
+    }
+
+    .peques > .abril {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        flex-direction: column-reverse;
+    }
+
+    .team{
+        padding: 50px;
+    }
+
+    .team div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .team div img{
+        margin-bottom: 50px;
+    }
+
+    /* blog */
+    .blog > .blogContenido {
+        margin-top: 100px;
+        margin-bottom: 100px;
+        height: 78vh;
+        padding: 32px;
+    }
+
+    .blog > .blogContenido p {
+        margin-right: 38%;
+        margin-top: 30px;
+    }
+
+    .secDetailNew img{
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    /* empresas */
+    .secEmpresa > .empresasContenido {
+        margin-top: 100px;
+        margin-bottom: 100px;
+        height: 72vh;
+        padding: 36px;
+    }
+
+    .secEmpresa > .empresasContenido h1 {
+        font-weight: 600;
+        font-size: 64px;
+        margin-right: 30%;
+        font-weight: bold;
+    }
+
+    .secEmpresa > .empresasNuevas{
+        background-position: bottom;
+    }
+    /* login y regis */
+    .login, .regis{
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .regis > .regisSection {
+        width: 80%;
+        padding-bottom: 32px;
+        padding-top: 32px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .secDonacion{
+        background-position: -124px -48px;
+    }
+
+    .tusReciclajes .filtros div form {
+        font-family: ABeeZee;
+        width: 75%;
+    }
+
+    .secEventos div > ul li,
+    .secEventosDonante div > ul li,
+    .donador-mainReci .secEventosDetail div > ul li{
+        flex-direction: column;
+    }
+
+    .comentariosEventos > h4, .comenta {
+        color: #FFF;
+        padding: 60px;
+    }
+
+    .secMercado h2.ventasTitulo{
+        margin-top: 90px;
+    }
+
+    .secMercado div div div .col-md-6{
+        margin-bottom: 60px;
+    }
+
+    .formNew > form, .editBook form{
+        background-position: -117px;
+    }
+
+    .indexDonador{
+        background-position: 80% 120%;
+    }
+
+    .dashboardDonador .introDash div{
+        padding: 84px;
+    }
+
+    .formDonacion > form{
+        background-position: -52px;
+    }
+
+    .btns-editar-eliminar-empresa {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .paginaError{
+        background-size: 100%;
+        height: 827px;
+    }
+
+    .roles div {
+        padding: 60px;
+        height: 630px;
+    }
+}
+
+@media screen and (max-width: 1023px) and (min-width: 768px){
+    .roles div {
+        padding: 60px;
+        height: 760px;
+    }
+}
+
+@media screen and (max-width: 768px){
+
+    .btns-editar-eliminar-empresa {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .sidebar.active{
+        min-width: 54%;
+    }
+
+    html body .main > .sidebar.consumidor-navbarMercado,
+    html body .main > .sidebar.donador-navbar,
+    html body .main > .sidebar.admin-navbar{
+        z-index: 1;
+    }
+
+    .inicio > .portada {
+        background-image: url(../img/portada.svg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: center 419px;
+        height: 106vh;
+        padding-top: 6%;
+    }
+
+    .portada > p {
+        font-family: 'ABeeZee', sans-serif;
+        padding-right: 0;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .bienvenidos {
+        height: 76vh;
+        background-image: url(../img/deco-trashWord.svg);
+        background-repeat: no-repeat;
+        background-size: 78%;
+        background-position: right 95px;
+        margin-top: 120px;
+    }
+
+    .bienvenidos > .bievenidaInfo {
+        padding: 28px;
+    }
+
+    .bienvenidos > .bievenidaInfo > h2 {
+        font-size: 92px;
+    }
+
+    .bienvenidos > .bievenidaInfo > p {
+        margin-right: 42%;
+    }
+
+    .cardsHome {
+        padding: 28px;
+    }
+
+    .cardsHome div .card1,
+    .cardsHome div .card2 {
+        margin-right: 0;
+    }
+
+    .cardsHome > .section2 {
+        margin-top: 5%;
+        margin-left: 0;
+        
+    }
+
+    .cardsHome > .section2 div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .inicio > .portada .alquimia{
+        background-position: center;
+        padding-right: 0;
+    }
+
+    .card-group {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cardsHome > div > .card{
+        margin-bottom: 50px;
+    }
+    /* SOBRE NOSOTROS */
+    .nosotros {
+        padding: 50px;
+        background-image: none;
+        background-size: 100%;
+        background-position-x: center;
+        background-repeat: no-repeat;
+        height: 114vh;
+    }
+
+    .nosotros > .containerNosotros {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .marca {
+        padding: 50px;
+        background-image: url(../img/nosotros/marca-back.svg);
+        background-size: 100%;
+        background-position-x: center;
+        background-repeat: no-repeat;
+        height: 100%;
+        margin-top: 68%;
+    }
+
+    .card-group {
+        display: flex;
+        flex-direction: column;
+        flex-flow: column;
+    }
+
+    .marca > .card-group .card{
+        margin-bottom: 20px;
+    }
+
+    .marca > .card-group .card1,
+    .marca .card-group .card2,
+    .marca .card-group .card3{
+        margin-right: 0;
+    }
+
+    .alquimiaNosotros {
+        background-image: url(../img/nosotros/alquimia-reticula.svg);
+        background-size: 128%;
+        background-position: -183px;
+        background-repeat: no-repeat;
+        height: 64vh;
+    }
+
+    .alquimiaNosotros > p {
+        padding-top: 125px;
+        padding-left: 50px;
+        margin-right: 54%;
+        font-weight: 600;
+        line-height: 38px;
+    }
+
+    .peques {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .peques > .jor{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .peques > .abril {
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+
+    .peques > .jor div,
+    .peques > .abril div {
+        margin-left: 0;
+        padding: 40px;
+        margin-right: 0;
+    }
+
+    .team {
+        padding-top: 40%;
+        padding-left: 78px;
+        padding-right: 78px;
+        background-image: url(../img/nosotros/team-back.svg);
+        background-size: 100%;
+        background-position-x: -100px;
+        background-repeat: no-repeat;
+    }
+
+    .team div {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+
+    .team div img{
+        margin-bottom: 50px;
+    }
+    /* BLOG */
+    .blog > .blogContenido {
+        margin-top: 30px;
+        margin-bottom: 100px;
+        height: 82vh;
+        padding: 50px;
+    }
+    .blog > .blogContenido h1 {
+        font-weight: 600;
+        font-size: 66px;
+        margin-right: 30%;
+        font-weight: bold;
+    }
+    .blog > .blogContenido p {
+        margin-right: 0%;
+    }
+
+    .blog > article > ul > li {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 54px;
+    }
+    .blog > .eventos > .texto {
+        background-color: #E17957;
+        width: 50%;
+        height: 800px;
+        padding: 38px;
+    }
+
+    .secDetailNew img {
+        padding-right: 0; 
+        padding-left: 0; 
+    }
+    .secDetailNew .contenidoDetail {
+        padding: 56px;
+    }
+    .secDetailNew > .contenidoDetail > .invitacion-registro {
+        padding: 50px;
+    }
+
+    /* EMPRESAS */
+    .secEmpresa {
+        background-image: url(../img/empresas/empresas-back.svg);
+        background-repeat: no-repeat;
+        background-size: 76%;
+        background-position-x: 124%;
+        background-position-y: 406px;
+    }
+
+    .secEmpresa > .empresasContenido {
+        margin-top: 2px;
+        margin-bottom: 100px;
+        height: 84vh;
+        padding: 50px;
+    }
+
+    .secEmpresa > .empresasContenido h1 {
+        font-weight: 600;
+        font-size: 66px;
+        margin-right: -6%;
+        font-weight: bold;
+    }
+
+    .secEmpresa > .empresasContenido p {
+        margin-right: 6%;
+    }
+
+    .secEmpresa > article > ul > li {
+        display: flex;
+        flex-direction: column;
+        padding: 54px;
+    }
+
+    .secEmpresa > article > ul > li div {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .secEmpresa > .empresasNuevas{
+        background-position-y: 74%;
+    }
+
+    /* LOGIN Y REGIS */
+    .login, .regis{
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .login > .loginSection,
+    .regis > .regisSection{
+        width: 78%;
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 34px;
+        padding-bottom: 34px;
+    }
+
+    .regis > .regisSection form > div button{
+        margin-left: 0;
+    }
+
+    .regis > .regisSection form > #step2 .botones, .regis > .regisSection form > #step3 .botones {
+        display: flex;
+        justify-content: space-evenly;
+        padding-right: 0%; 
+        margin-top: 30px;
+    }
+
+    /* INDEX */
+
+    html body .main > .sidebar.donador-navbar ul li .publicar{
+        margin-top: 100px;
+    }
+
+    .indexDonador,
+    .indexConsumidor {
+        background-size: 100%;
+        background-position: 80% 80%;
+        padding: 50px;
+        height: 100vh;
+    }
+
+    .indexDonador div > h1,
+    .indexConsumidor div > h1 {
+        font-size: 55px;
+        font-family: Comfortaa;
+        font-weight: 600;
+        width: 100%;
+        padding-top: 15%;
+        text-align: center;
+    }
+
+    .indexConsumidor div > h1 {
+        font-size: 54px;
+    }
+
+    .indexDonador, .indexConsumidor {
+        background-position: 80% 104%;
+    }
+
+    .indexTexto {
+        width: 100%;
+    }
+
+    .indexTexto > p {
+        font-size: 17px;
+        text-align: center;
+    }
+
+    .indexTexto  > .indexBotones{
+        display: flex;
+        justify-content: center;
+    }
+    /* DONANTE RECI */
+    .dashboardDonador {
+        background-position-y: -112px;
+    }
+
+    .detaildonacionDonador {
+        background-color: #7798A3;
+        background-image: url(../img/donador/reciclaje/fondo-reciclaje-donante-detalle.svg);
+        background-repeat: repeat;
+        background-size: 100%;
+        padding: 30px;
+        background-position: 125px;
+    }
+
+    .dashboardDonador .introDash .container{
+        padding: 24px;
+    }
+
+    .dashboardDonador .introDash div .main .cards{
+        margin-top: 50px;
+    }
+
+    .autorDate {
+        margin-top: 0; 
+    }
+
+    .formDonacion > form{
+        width: 80%;
+        background-position: -83px
+    }
+
+    .secMercado h2.ventasTitulo{
+        margin-top: 90px;
+    }
+
+    .secMercado div div div .col-md-6{
+        margin-bottom: 60px;
+    }
+
+    /* mercado donante */
+    .donador-main > .formNew h1, .donador-main > .editBook h1 {
+        text-align: center;
+    }
+
+    .formNew > form, .editBook form{
+        background-position: -80px;
+    }
+    .donador-main .formNew > form{
+        background-position: -69px;
+    }
+
+    .userProduct div h1{
+        padding: 18px;
+    }
+    .detalleMercado{
+        background-position: 77px 54%;
+    }
+
+    /* donacion consumidor */
+    .tusReciclajes .filtros div form {
+        font-family: ABeeZee;
+        width: 106%;
+    }
+
+    .secDonacion{
+        background-position: -7px -137px;
+    }
+
+    .detaildonacion .autorDate{
+        padding: 0;
+    }
+
+    .detaildonacion div > div{
+        padding: 8px;
+    }
+
+    .detaildonacion, .detaildonacionEvento {
+        padding: 50px;
+    }
+
+    /* eventos */
+
+    .secEventos div > ul li,
+    .secEventosDonante div > ul li,
+    .donador-mainReci .secEventosDetail div > ul li{
+        flex-direction: column;
+    }
+
+    .comentariosEventos > h4, .comenta {
+        padding: 48px;
+    }
+
+    .parrafo-con-linea-arriba {
+        padding: 20px;
+    }
+
+    .detalledonacion div .butons{
+        margin-bottom: 50px;
+    }
+    .detalledonacion div .evento-data{
+        padding: 42px;
+    }
+
+    /* ADMIN */
+    html body .main > .sidebar.admin-navbar > nav p{
+        font-size: 20px;
+    }
+
+    html body .main > .sidebar.admin-navbar > nav div{
+        margin-top: 20px;
+    }
+    .adminDash > div .cardsAdmin{
+        justify-content: center;
+    }
+
+    .paginaError {
+        background-color: #EBE4D1;
+        padding: 10%;
+        padding-top: 30%;
+        background-image: url(../img/404/404-back.svg);
+        background-repeat: no-repeat;
+        background-position: 126%;
+        background-size: 114%;
+        height: 922px;
+    }
+
+    .roles div {
+        padding: 30px;
+        height: 518px;
+    }
+}
+
+@media screen and (max-width: 743px) and (min-width: 426px){
+    .bienvenidos > .bievenidaInfo > h2 {
+        font-size: 54px;
+    }
+
+    .inicio > .portada{
+        background-size: 198%;
+        background-position: 16px 382px;
+    }
+
+    .roles{
+        flex-direction: column;
+    }
+
+    .roles div {
+        padding: 34px;
+        height: 510px;
+    }
+
+    .roles > .consumidor,
+    .roles > .donante{
+        width: 100%;
+    }
+
+    footer.footer ul{
+        flex-direction: column;
+    }
+
+    footer{
+        height: 268px;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 425px){
+
+    .login, .regis {
+        background-color: #F4FCF6;
+        padding-left: 0;
+        padding-right: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-image: none;
+        height: 1180px;
+    }
+
+    footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        background-color: #dbe4c6;
+        color: #fff;
+        padding: 0; 
+    }
+
+    .alert-success{
+        margin-top: 10%;
+    }
+    /* MENU */
+    html body .main > .sidebar > nav ul {
+        list-style-type: none;
+        margin-top: 15%;
+        padding-right: 0rem;
+        width: 100%;
+        padding-left: 0;
+    }
+
+    html body .main > .sidebar.consumidor-navbarMercado,
+    html body .main > .sidebar.donador-navbar,
+    html body .main > .sidebar.admin-navbar{
+        z-index: 1;
+    }
+
+    html body .main > .sidebar.admin-navbar nav div p{
+        font-size: 22px;
+    }
+    html body .main > .sidebar.admin-navbar > nav div .alquimia{
+        height: 38px;
+        width: 45px;
+    }
+
+    /* ...... */
+
+    .inicio {
+        height: 100vh;
+    }
+
+    .inicio > .portada {
+        background-image: url(../img/portada.svg);
+        background-repeat: no-repeat;
+        background-size: 287%;
+        background-position: -211px 320px;
+        height: 106vh;
+        padding-top: 40%;
+    }
+
+    .inicio > .portada .alquimia {
+        padding-right: 0;
+        background-image: url(../img/alquimia.svg);
+        background-repeat: no-repeat;
+        background-size: 84%;
+        height: 130px;
+        background-position-x: center;
+        padding: 0;
+    }
+
+    .portada > p {
+        font-family: 'ABeeZee', sans-serif;
+        padding-right: 0;
+        text-align: center;
+        font-size: 16px;
+    }
+
+    .bienvenidos {
+        height: 76vh;
+        background-image: url(../img/deco-trashWord.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: right bottom;
+        margin-top: 40%;
+    }
+
+    .bienvenidos > .bievenidaInfo {
+        padding: 0;
+    }
+
+    .bienvenidos > .bievenidaInfo > h2 {
+        font-size: 38px;
+        margin-left: 18px;
+    }
+    
+    .bienvenidos > .bievenidaInfo > p {
+        margin-right: 18px;
+        margin-left: 18px;
+    }
+
+    .bienvenidos > .bievenidaInfo > a {
+        margin-left: 18px;
+    }
+
+    .roles{
+        flex-direction: column;
+    }
+
+    .roles > .consumidor,
+    .roles > .donante{
+        width: 100%;
+    }
+
+    .roles > .consumidor{
+        background-position-x: -18px;
+    }
+
+    .roles div {
+        padding: 18px;
+        height: 466px;
+    }
+
+    footer.footer ul {
+        list-style: none;
+        display: flex;
+        /* font-size: 18px; */
+        align-items: center;
+        flex-direction: column;
+    }
+
+    footer{
+        height: 277px;
+        padding: 0;
+    }
+
+    .cardsHome {
+        padding: 0; 
+        margin-top: 40%;
+        margin-bottom: 20%;
+    }
+
+    .cardsHome div .card1,
+    .cardsHome div .card2 {
+        margin-right: 0; 
+    }
+
+    .cardsHome > div > .card {
+        margin-bottom: 50%;
+    }
+
+    .cardsHome > .section2 {
+        margin-top: 5%;
+        margin-left: 0; 
+        width: 100%;
+    }
+
+    .cardsHome > .section2 div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nosotros {
+        padding: 0;
+        background-image: url(../img/nosotros/nosotros-back.svg);
+        background-size: 122%;
+        background-position-x: 7px;
+        background-repeat: no-repeat;
+        height: 0;
+        margin-top: 20%;
+    }
+
+    .nosotros > .containerNosotros {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .marca > .card-group .card1, .marca > .card-group .card2, .marca > .card-group .card3 {
+        margin-right: 0; 
+    }
+
+    .marca {
+        padding: 0;
+        margin-top: 350%;
+        background-image: url(../img/nosotros/marca-back.svg);
+        background-size: 158%;
+        background-position: center bottom;
+        background-repeat: no-repeat;
+        height: 175vh;
+    }
+
+    .alquimiaNosotros {
+        background-image: url(../img/nosotros/alquimia-reticula.svg);
+        background-size: 102%;
+        background-position: center bottom;
+        background-repeat: no-repeat;
+        height: 50vh;
+        margin-top: 487%;
+    }
+
+    .alquimiaNosotros > p {
+        padding-top: 0; 
+        padding-left: 0; 
+        margin-right: 0; 
+        font-weight: 600;
+        line-height: 38px;
+    }
+
+    .line {
+        background-image: url(../img/nosotros/line.svg);
+        background-repeat: no-repeat;
+        height: 27vh;
+        background-position: center;
+    }
+
+    .peques {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .peques > .jor div,
+    .peques > .abril div {
+        margin-right: 0; 
+        width: 390px;
+        margin-left: 0;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .peques > .jor img,
+    .peques > .abril img{
+        width: 425px;
+    }
+
+    .peques > .abril{
+        display: flex;
+        flex-direction: column-reverse;  
+    }
+
+    .peques > .jor, .peques > .abril {
+        width: 0; 
+    }
+
+    .peques > .jor{
+        display: flex;
+        align-items: center;
+        width: 0;
+        flex-direction: column;
+    }
+
+    .marca > h2{
+        margin-left: 20px;
+    }
+
+    .nosotros > .containerNosotros > div p,
+    .marca > p,
+    .alquimiaNosotros > p{
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+
+    .team {
+        padding: 0; 
+        background-image: url(../img/nosotros/team-back.svg);
+        background-size: 100%;
+        background-position-x: center;
+        background-repeat: no-repeat;
+        margin-top: 50%;
+        margin-bottom: 40px;
+    }
+
+    .team div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* ---------------------------BLOG----------------------- */
+    .blog {
+        background-image: url(../img/blog-back.svg);
+        background-repeat: no-repeat;
+        background-size: 70%;
+        background-position: right 420px;
+    }
+
+    .blog > .blogContenido {
+        margin-top: 100px;
+        margin-bottom: 100px;
+        height: 78vh;
+        padding: 0; 
+    }
+
+    .blog > .blogContenido h1 {
+        font-weight: 600;
+        font-size: 30px;
+        margin-right: 2%;
+        text-align: center;
+        font-weight: bold;
+        margin-bottom: 16px;
+    }
+
+    .blog > .blogContenido p {
+        margin-right: 5%;
+        margin-left: 5%;
+        font-size: 15px;
+    }
+
+    .blog > .blogContenido a {
+        background-color: #255126;
+        color: white;
+        margin-left: 5%;
+    }
+    
+    .blog > article ul {
+        list-style: none;
+        border-top: 1px dashed #617143;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 10px;
+    }
+
+    .blog > article > ul > li {
+        display: flex;
+        padding: 0;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .blog > article > ul > li > div {
+        padding: 44px;
+    }
+
+    .blog > .eventos {
+        display: flex;
+        margin-top: 10%;
+        flex-direction: column-reverse;
+    }
+
+    .blog > .eventos > .texto {
+        background-color: #E17957;
+        width: 100%;
+        height: 500px;
+        padding: 46px;
+    }
+
+    .blog > .eventos > .box {
+        background-image: url(../img/foto-blog-reciclando.jpg);
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 800px;
+    }
+
+    /* ------------------------------------------------------ */
+    /* -------------------------NEWS----------------------------- */
+    .secDetailNew img {
+        padding-right: 0; 
+        padding-left: 0; 
+    }
+    .secDetailNew .authorDate {
+        display: flex;
+        margin-left: 14px;
+        margin-top: 14px;
+        border-bottom: 1px solid;
+        border-color: #487949;
+        flex-direction: row;
+    }
+
+    .secDetailNew .contenidoDetail {
+        padding: 0; 
+    }
+
+    .secDetailNew p {
+        margin-left: 12px;
+        color: black;
+        padding-top: 0;
+        padding: 12px;
+    }
+
+    .secDetailNew > .contenidoDetail > .invitacion-registro {
+        padding: 33px;
+    }
+
+    .secDetailNew h3{
+        margin-left: 0;
+    }
+
+    .secDetailNew .contenidoDetail a {
+        margin-left: 40px;
+        margin-bottom: 20px;
+    }
+
+    /* ------------------------------------------------------ */
+    /* ----------------------EMPRESAS------------------------------- */
+    .secEmpresa {
+        background-image: url(../img/empresas/empresas-back.svg);
+        background-repeat: no-repeat;
+        background-size: 110%;
+        background-position-x: center;
+        background-position-y: 354px;
+    }
+    .secEmpresa > .empresasContenido {
+        margin-top: 100px;
+        margin-bottom: 100px;
+        height: 72vh;
+        padding: 0; 
+    }
+
+    .secEmpresa > .empresasContenido h1 {
+        font-weight: 600;
+        font-size: 30px;
+        text-align: center;
+        margin-right: 5%;
+        font-weight: bold;
+    }
+
+    .secEmpresa > .empresasContenido p {
+        margin-right: 5%;
+        margin-left: 5%;
+        margin-top: 16px;
+    }
+
+    .secEmpresa > .empresasContenido a {
+        background-color: #255126;
+        color: white;
+        margin-left: 5%;
+    }
+
+    .secEmpresa > article > ul > li {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 54px;
+    }
+
+    .secEmpresa > article > ul > li div {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .secEmpresa > .empresasNuevas {
+        padding: 20px;
+        height: 74vh;
+        background-image: url(../img/empresas/nuevas-empresas.svg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position-y: 90%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    /* ------------------------------------------------------ */
+    /* -------------------------LoGIN REGISTER----------------------------- */
+
+    .login, .regis {
+        background-color: #F4FCF6;
+        padding-left: 0; 
+        padding-right: 0; 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-image: none;
+    }
+    .login > .loginSection {
+        width: 88%;
+        padding: 68px;
+        background: #F4FCF6;
+        border-radius: 16px;
+        box-shadow: 0px 5px 4px 0px rgba(0, 0, 0, 0.1);
+    }
+
+    .login > .loginSection form{
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 60px;
+    }
+
+    .login > .loginSection > form > .botones button {
+        background-color: #E17957;
+        color: #482317;
+        border-radius: 20px;
+        margin-left: 0;
+        margin-right: 0;
+        padding: 10px;
+        margin-top: 80px;
+        font-family: 'ABeeZee', sans-serif;
+    }
+
+    .regis > .regisSection {
+        width: 88%;
+        padding-top: 24px;
+        padding-bottom: 40px;
+        padding-left: 0;
+        padding-right: 0;
+        background: #E17957;
+        border-radius: 16px;
+        box-shadow: 0px 5px 4px 0px rgba(0, 0, 0, 0.1);
+    }
+
+    .regis > .regisSection > h1 {
+        color: #482317;
+        font-weight: 600;
+        font-size: 26px;
+        margin-bottom: 26px;
+        text-align: center;
+    }
+
+    .regis > .regisSection form {
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 10px;
+    }
+
+    .regis > .regisSection form > #step2 .botones, .regis > .regisSection form > #step3 .botones {
+        display: flex;
+        padding-right: 0;
+        margin-top: 0;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .regis > .regisSection form > div button {
+        background-color: #5d6731;
+        color: white;
+        font-family: 'ABeeZee', sans-serif;
+        margin-left: 4%;
+        padding: 10px;
+        width: 140px;
+        margin-top: 40px;
+        border-radius: 20px;
+    }
+    /* -------------------HOME-CONSUMIDOR------------------ */
+    
+    .indexConsumidor,
+    .indexDonador {
+        background-size: 134%;
+        background-position: 70% 108%;
+        padding: 0; 
+        height: 87vh;
+    }
+
+    .adminIndex {
+        background-size: 122%;
+        background-position: 70% 100%;
+        padding: 0; 
+        height: 87vh;
+    }
+
+    .indexConsumidor div > h1,
+    .indexDonador div > h1,
+    .adminIndex div > h1  {
+        font-size: 44px;
+        font-family: Comfortaa;
+        font-weight: 600;
+        padding-top: 36px;
+        text-align: center;
+        margin-right: 0;
+    }
+
+
+    .indexTexto > p,
+    .indexTextoAdmin > p {
+        font-size: 18px;
+        font-family: ABeeZee;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 20px;
+    }
+
+    .indexTexto > .indexBotones,
+    .indexTextoAdmin > .indexBotones{
+        display: flex;
+        justify-content: center;
+    }
+
+    .indexTexto {
+        width: 100%;
+        text-align: center;
+    }
+
+    /* ----------------------------RECICLAJE------------ */
+    .tusReciclajes > h1 {
+        font-size: 32px;
+        font-family: Comfortaa;
+        color: #000;
+        padding-top: 32px;
+    }
+
+    .tusReciclajes .filtros {
+        display: flex;
+        border-top: 1px solid #fed46e;
+        padding: 28px;
+        flex-direction: column;
+    }
+
+    .tusReciclajes .filtros div form {
+        font-family: ABeeZee;
+        width: 96%;
+    }
+
+    .secDonacion{
+        background-image: none;
+    }
+
+    .tusReciclajes .row {
+        margin-bottom: 20%;
+        background-image: url(../img/consumidor/mercado/fondo-donacion-elementos.svg);
+        background-repeat: repeat;
+        background-size: 108%;
+        background-position: 424px -242px;
+    }
+
+    .detaildonacion, .detaildonacionEvento {
+        padding-top: 54px;
+        padding-left: 0;
+        padding-bottom: 0;
+        padding-right: 0;
+    }
+
+    .detaildonacion div > div {
+        padding: 5px;
+        margin: 2px;
+    }
+
+    .secEventos div > ul li {
+        display: flex;
+        align-items: center;
+        background-color: #D48662;
+        border-radius: 32px;
+        margin-bottom: 100px;
+        padding: 30px;
+        flex-direction: column;
+    }
+
+    .secEventos div{
+        padding: 17px;
+    }
+    .secEventos div > ul li .fixed-image-size{
+        margin-bottom: 32px;
+    }
+
+    .comentariosEventos > h4,
+    .comenta{
+        padding-top: 54px;
+    }
+
+    .comenta{
+        padding-left: 0;
+    }
+
+    .d-flex {
+        display: flex!important;
+        flex-direction: column;
+    }
+
+    .parrafo-con-linea-arriba {
+        margin-top: 54px;
+    }
+
+    .comentarios p{
+        padding: 12px;
+    }
+
+    .secMercado div div .col-md-3{
+        margin-bottom: 22%;
+    }
+
+    .secMercado div .row{
+        padding: 22px;
+    }
+
+    .formNew h1{
+        font-weight: 600;
+        color: #7c3f2c;
+        font-size: 50px;
+        font-family: Comfortaa;
+        margin: 100px 0 50px 0;
+        font-weight: 400;
+        text-align: center;
+    }
+
+    .formNew > form, .editBook form {
+        width: 90%;
+        padding: 36px;
+        background: #FF8F6B4A;
+        background-image: url(../img/consumidor/mercado/fondo-form-mercado.svg);
+        background-repeat: repeat;
+        background-size: 100%;
+        background-position: -43px;
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(10.5px);
+        -webkit-backdrop-filter: blur(10.5px);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+    }
+
+    .formNew form div.d-flex{
+        display: flex!important;
+        flex-direction: row;
+    }
+
+    .costume-btn-volver{
+        margin-right: 12px;
+    }
+
+    .consumidor-main .secMercado div p{
+        margin-left: 2%;
+        margin-right: 5%;
+    }
+
+    .consumidor-main .secMercado > div > h2{
+        margin-left: 2%;
+        margin-right: 5%;
+    }
+
+    .userProduct .tusVentas div .col-md-3{
+        margin-top: 20%;
+    }
+
+    .userProduct .tusVentas .parrafo-con-linea-roja{
+        margin-top: 42px;
+    }
+
+    .dashboardDonador{
+        background-image: none;
+    }
+    .dashboardDonador .introDash .container:first-child{
+        padding: 24px;
+    }
+
+    .dashboardDonador .introDash .container:last-child{
+        background-image: url(../img/donador/reciclaje/fondo-reciclaje-donante.svg);
+        background-repeat: repeat;
+        background-size: 100%;
+        background-position-y: 16px;
+    }
+
+    .formDonacion h1{
+        text-align: center;
+        padding: 10px;
+    }
+
+    .formDonacion > form{
+        width: 86%;
+        padding: 34px;
+        background-position-x: -60px;
+    }
+
+    .formDonacion > form .d-flex{
+        flex-direction: column-reverse;
+    }
+
+    .detaildonacionDonador {
+        padding: 48px;
+    }
+
+    .card_donacion{
+        background-image: none;
+        margin: 10px;
+    }
+    
+    .card_donacion div .infodonacion .infoExtra .col-md-4{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .deleteDonacion div h1{
+        text-align: center;
+        padding: 10px;
+    }
+
+    .secEventosDonante div > ul li{
+        padding: 24px;
+        flex-direction: column;
+    }
+
+    .secEventosDonante div{
+        padding: 26px;
+    }
+
+    .detaildonacionDonante div > h1 {
+        color: black;
+        padding-top: 46px;
+    }
+
+    .detaildonacionDonante div > div {
+        align-items: center;
+        background-color: #7FA09F;
+        padding: 12px;
+        border-radius: 24px;
+    }
+
+    .autorDate{
+        margin-top: 0;
+    }
+
+    .donador-mainReci .secEventosDetail div > ul li{
+        padding: 14px;
+        flex-direction: column;
+    }
+
+    .donador-mainReci .secEventosDetail div {
+        padding: 24px;
+    }
+
+    .donador-mainReci .detalledonacion div .evento-data div div .infoEmpresa,
+    .donador-mainReci .deleteEvento div .evento div .infoEmpresa,
+    .donador-mainReci .deleteEvento div form div{
+        padding: 20px;
+    }
+
+    .detalledonacion div .butons{
+        margin-bottom: 50px;
+    }
+
+    html body .main > .sidebar.donador-navbar ul li .publicar{
+        margin-top: 24px;
+    }
+
+    /* -----------------AADMIN------------------- */
+    .empresasAdmin .introEmpresasAdmin{
+        padding: 26px;
+    }
+
+    .formEmpresa h1{
+        text-align: center;
+    }
+    .formEmpresa > form {
+        width: 86%;
+        padding: 26px;
+        background: #94a37a94;
+        background-image: url(../img/consumidor/mercado/fondo-form-empresas.svg);
+        background-repeat: repeat;
+        background-size: 100%;
+        border-radius: 16px;
+        background-position: -63px 180px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(10.5px);
+        -webkit-backdrop-filter: blur(10.5px);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        margin-bottom: 200px;
+    }
+
+    .deleteEmpresa div h1{
+        text-align: center;
+    }
+
+    .deleteEmpresa div div div .infoEmpresa{
+        padding: 20px;
+    }
+
+    .adminDash{
+        padding: 50px;
+    }
+
+    .editBook h1{
+        font-size: 28px;
+        margin: 10px 10px 50px 10px;
+        padding-top: 36px;
+    }
+
+    .paginaError {
+        background-color: #EBE4D1;
+        padding: 6%;
+        padding-top: 142px;
+        background-image: url(../img/404/404-back.svg);
+        background-repeat: no-repeat;
+        background-position: -160px;
+        background-size: 136%;
+        height: 827px;
+    }
+}

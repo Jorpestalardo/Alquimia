@@ -1,0 +1,202 @@
+estoy haciendo con laravel un envío de mail por mailtrap por si el usuario se olvida su contraseña la pueda cambiar->esta es mi ContraOlvidadaController
+<?php
+namespace App\Http\Controllers;
+
+use App\Mail\RecuperarContraMailable;
+use App\Models\Usuarios;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
+use Illuminate\Support\Str;
+
+class ContraOlvidadaController extends Controller
+{
+    public function showForm()
+    {
+        return view('auth.forgot-password');
+    }
+
+    public function sendRecoveryCode(Request $request)
+    {
+        $request->validate([
+            'email' => 'required|email',
+        ]);
+    
+        $user = Usuarios::where('email', $request->email)->first();
+    
+        if (!$user) {
+            return redirect()->route('password.request')
+                ->with('error', 'No se encontró ningún usuario con esa dirección de correo electrónico.');
+        }
+    
+        $recoveryCode = Str::random(40);
+    
+        $user->update([
+            'recovery_code' => $recoveryCode,
+        ]);
+    
+        Mail::to($user->email)->send(new RecuperarContraMailable($recoveryCode));
+    
+        return redirect()->route('password.request')
+            ->with('success', 'Se ha enviado un código de recuperación a tu dirección de correo electrónico. Puedes restablecer tu contraseña utilizando el código proporcionado en el correo electrónico.');
+    }
+}
+
+mi RestablecerContraController
+<?php
+
+namespace App\Http\Controllers;
+
+use App\Models\Usuarios;
+use Hash;
+use Illuminate\Http\Request;
+
+class RestrablecerContraController extends Controller
+{
+    public function showForm($code)
+    {
+        $user = Usuarios::where('recovery_code', $code)->first();
+
+        if (!$user) {
+            return redirect()->route('auth.reset-password')
+                ->with('error', 'Código de recuperación inválido o expirado.');
+        }
+
+        return view('auth.reset-password', compact('code'));
+    }
+
+    public function updatePassword(Request $request)
+    {
+        $request->validate([
+            'code' => 'required',
+            'password' => 'required|confirmed|min:8',
+        ]);
+
+        $user = Usuarios::where('recovery_code', $request->code)->first();
+
+        if (!$user) {
+            return redirect()->route('auth.reset-password')
+                ->with('error', 'Código de recuperación inválido o expirado.');
+        }
+
+        $user->update([
+            'password' => Hash::make($request->password),
+            'recovery_code' => null,
+        ]);
+
+        return redirect()->route('auth.login')
+            ->with('success', 'Tu contraseña ha sido actualizada. Ahora puedes iniciar sesión.');
+    }
+}
+
+mis rutas
+// Recuperar Contraseña
+Route::get('/forgot-password', [ContraOlvidadaController::class, 'showForm'])->name('password.request');
+Route::post('/forgot-password', [ContraOlvidadaController::class, 'sendRecoveryCode'])->name('password.email');
+Route::get('/reset-password/{code}', [RestrablecerContraController::class, 'showForm'])->name('password.reset');
+Route::post('/reset-password', [RestrablecerContraController::class, 'updatePassword'])->name('password.update');
+
+y dentro de auth/ 
+
+forgot-password.blade
+@extends('layouts.main')
+
+@section('title', 'Recuperar Contraseña')
+
+@section('main')
+    <section class="forgot-password">
+        <div class="forgotPasswordSection">
+            <div class="alquimia"></div>
+            <h1>Recuperar Contraseña</h1>
+
+            @if (session('success'))
+                <div class="alert alert-success">
+                    {{ session('success') }}
+                </div>
+            @elseif (session('error'))
+                <div class="alert alert-danger">
+                    {{ session('error') }}
+                </div>
+            @endif
+            <form action="{{ route('password.email') }}" method="POST">
+                @csrf
+                <div>
+                    <label for="email" class="form-label"> Email</label>
+                    <input type="email" name="email" id="email" class="form-control"
+                        @if ($errors->has('email')) aria-describedby="error-email" @endif>
+                    @error('email')
+                        <div class="text-danger" id="error-email">{{ $message }}</div>
+                    @enderror
+                </div>
+
+                <div class="botones">
+                    <button type="submit" class="btn">Enviar Código de Recuperación</button>
+                    <a class="mt-4" href="{{ route('auth.login') }}">Volver al Inicio de Sesión</a>
+                </div>
+            </form>
+        </div>
+    </section>
+@endsection
+
+
+
+y reset-password.blade
+@extends('layouts.main')
+
+@section('title', 'Restablecer Contraseña')
+
+@section('main')
+    <section class="reset-password">
+        <div class="resetPasswordSection">
+            <div class="alquimia"></div>
+            <h1>Restablecer Contraseña</h1>
+
+            @if (session('error'))
+                <div class="alert alert-danger">
+                    {{ session('error') }}
+                </div>
+            @endif
+            <form action="{{ route('password.update') }}" method="POST">
+                @csrf
+                <input type="hidden" name="code" value="{{ $code }}">
+
+                <div class="mb-3">
+                    <label for="password" class="password form-label">Nueva Contraseña</label>
+                    <div class="password-field">
+                        <input type="password" name="password" id="password" class="form-control"
+                            @if ($errors->has('password')) aria-describedby="error-password" @endif>
+                        <span class="toggle-password" onclick="togglePasswordVisibility()">
+                            <ion-icon name="eye-outline"></ion-icon>
+                        </span>
+                    </div>
+                    @error('password')
+                        <div class="text-danger" id="error-password">{{ $message }}</div>
+                    @enderror
+                </div>
+
+                <div class="mb-3">
+                    <label for="password_confirmation" class="password form-label">Confirmar Nueva Contraseña</label>
+                    <div class="password-field">
+                        <input type="password" name="password_confirmation" id="password_confirmation"
+                            class="form-control" @if ($errors->has('password_confirmation'))
+                        aria-describedby="error-password_confirmation" @endif>
+                        <span class="toggle-password" onclick="togglePasswordVisibility()">
+                            <ion-icon name="eye-outline"></ion-icon>
+                        </span>
+                    </div>
+                    @error('password_confirmation')
+                        <div class="text-danger" id="error-password_confirmation">{{ $message }}</div>
+                    @enderror
+                </div>
+
+                <div class="botones">
+                    <button type="submit" class="btn">Restablecer Contraseña</button>
+                    <a class="mt-4" href="{{ route('auth.login') }}">Volver al Inicio de Sesión</a>
+                </div>
+            </form>
+        </div>
+    </section>
+    <script>
+        // Tu código JavaScript actual para el toggle de contraseña
+        // ...
+    </script>
+@endsection
